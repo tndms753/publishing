@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+   
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/SeMA_sub1_2.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sema.js"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--favicon 넣기-->
+    <!--아이폰 홈화면 아이콘-->
+    <link rel="apple-touch-icon-precomposed" href="img/sema_favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- 엑스표 아이콘 -->
+    
+    <!--브라우저 창 제목 표시줄에 보여주기-->
+    <link rel="shortcut icon" href="img/sema_favicon.png">
+    <script>
+      $(function(){ //JQuery 준비
+     
+        $('.modal li').click(function(){
+            $('#glayLayer').css('display','flex');
+            $('#overLayer > div > iframe').attr({
+                src:$(this).find('a').attr('href')
+                
+            });
+            
+            return false;
+            
+        });
+        $('span.close, #glayLayer').click(function(){
+            $('#glayLayer').hide();
+        })
+          
+      }); // JQuery 종료
+        
+        
+        
+        
+        
+    </script>
+</head>
+
+
+<body>
+     <? include "header.html" ?>
+    
+    <div class="content">
+      <div class="sub_bg">
+          
+      </div>
+      <div class="letter_wrap">
+      <span class="letter">
+          <a href="sub1.html">비전 / 전략</a>
+          <a href="sub1_2.html">미술관 소개</a>
+          <a href="sub1_3.html">오시는 길</a>
+      </span>
+      </div>
+  </div>
+  <article class="center">
+   <div class="letter">
+    <h2>'여럿이 만드는 미래, 모두가 연결된 미술관'을 지향하며 세계적인 미술관으로 도약하고 있습니다.</h2>
+    <h3>아시아의 중심도시인 대한민국 수도 서울의 대표 미술관으로서 세계성과 지역성,<br> 전문성과 대중성을 아우르는 다양한 기획전과 특별전을 개최하고,<br> 맞춤형 교육 및 국제교류 프로그램 등을 운영합니다.</h3>
+    </div>
+    <div class="box1">
+        <span>
+            국/내외 아티스트들과의 지속적인 네트워크를 구축하며, 국제적 문화교류를 통해 수준 높은 현대 미술과 디자인 분야를 소개합니다.
+            대중과의 활발한 소통을 지향합니다.<br>
+            지역연계 프로젝트를 통해 지역 사회와 함께 하는 문화를 만들어가는 친근한 미술관을 지향합니다.<br>
+            다양한 예술장르를 넘나들며 활동하는 국내 젊은 아티스트들의 독창적이고 실험적인 창작활동을 지원합니다.
+            다양한 교육프로그램을 통해 공공 교육의 발전과 활성화를 위해 앞장섭니다.
+        </span>
+    </div>
+    <div class="pics center">
+       <ul>
+           <li class="big">
+                <img src="img/sub/sub1_2_img/pic01.jpg" alt="미술관1">
+            </li>
+            <li  class="small">
+                <img src="img/sub/sub1_2_img/pic02.jpg" alt="미술관2">
+            </li>
+            
+            <li class="small">
+                <img src="img/sub/sub1_2_img/pic03.jpg" alt="미술관3">
+            </li>
+            <li class="big">
+                <img src="img/sub/sub1_2_img/pic04.jpg" alt="미술관4">
+            </li>
+        </ul>
+        </div>
+         </article>
+        
+        
+        <div class="time_wrap">
+            <div class="time center clearfix">
+               
+                   <img src="img/sub/sub1_2_img/angel.png" alt="small_img">
+         
+               <ul>
+                <li>
+                    <span>관람시간</span>
+                    <h3>화 - 금요일 : 10AM ~ 8PM<br>
+                    토·일·공휴일 하절기 (3-10월) :10 AM ~ 7 PM<br>
+                    동절기 (11-2월) : 10AM ~ 6PM
+                    </h3>
+                </li>
+
+                <li>
+                    <span>휴관일</span>
+
+                    <h3>매주 월요일<br>
+                    정기휴관 (1월1일)<br>
+                    전시준비 (11월7일 ~ 11월26일)
+                    </h3>
+
+                </li>
+                <li class="wrap">
+                    <span>입장시간</span>
+
+                    <h3>관람종료 1시간 전까지 입장</h3>
+                </li>
+
+                <li class="wrap">
+                    <span>관람료</span>
+
+                    <h3>무료, 특별전 유료</h3>
+                </li>
+                </ul>
+
+
+
+            </div><!-- time -->
+
+        </div><!-- time_wrap -->
+        
+     
+     
+     <div id="modal_win" class="center">
+        <h1>시설영상</h1>
+        <ul class="modal">
+            <li>
+                <a href="https://www.youtube.com/embed/3yhtgEqQtsA">
+                    <img src="img/sub/sub3_img/museum01.jpg" alt="사진1"></a>
+                <span>서소문 본관</span>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/tjwA4YvI_ho">
+                    <img src="img/sub/sub3_img/museum02.jpg" alt="사진2"></a>
+                <span>북서울 미술관</span>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/m3v-Uh2nNs0">
+                    <img src="img/sub/sub3_img/museum03.jpg" alt="사진3"></a>
+                <span>남서울 미술관</span>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/_C7NhU2Ibv0">
+                    <img src="img/sub/sub3_img/museum04.jpg" alt="사진4"></a>
+                <span>난지미술창작스튜디오</span>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/gG_y20W3kxM">
+                    <img src="img/sub/sub3_img/museum05.jpg" alt="사진5"></a>
+                <span>SeMA창고</span>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/eMRjAhDmsnM">
+                    <img src="img/sub/sub3_img/museum06.jpg" alt="사진6"></a>
+                <span>
+                    백남준기념관</span>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/vMREmYWZg8s">
+                    <img src="img/sub/sub3_img/museum07.jpg" alt="사진6"></a>
+                <span>
+                    SeMA 벙커</span>
+            </li>
+        </ul>
+    </div><!-- modal_win-->
+    <div id="glayLayer">
+    <div id="overLayer">
+        <div>
+            <iframe width="650" height="400" src="https://www.youtube.com/embed/3yhtgEqQtsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <span class="close">
+            <i class="material-icons">
+                close
+            </i>
+            </span>
+        </div>
+       </div>
+   </div>
+
+     <? include "footer.html" ?>
+    
+
+ 
+  <script>
+     
+  </script>
+
+    
+</body>
+
+</html>

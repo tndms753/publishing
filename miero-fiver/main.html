@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Miero Fiver_main</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/navi.js"></script>
+    <script>
+    $(function(){ // JQuery 준비
+        	///// 스크롤 100픽셀 내리면 상단메뉴 박스생김 /////
+	var currentScrollTop = 0;
+	window.onload = function() {
+		scrollController();
+		$(window).on("scroll", function() {
+			scrollController();
+		});
+	}
+	function scrollController() {
+		currentScrollTop = $(window).scrollTop();
+		if (currentScrollTop > 100) {
+			$("#top_wrap").addClass("fixed");
+		}else {
+				$("#top_wrap").removeClass("fixed");
+		}
+    }
+        
+        var offset;
+      $(window).scroll(function(){
+          var st = $(this).scrollTop();
+          var secH = $('#profile').height();
+          offset = $('#profile').offset().top;
+          if(st > offset - 300 && st < offset + secH){
+              $('#profile').addClass('active');
+          }
+      });
+   
+        
+        
+        $('#navi li .navi_sec, #navi_bg').hide();
+        
+        $('#navi, #navi_bg').mouseenter(function(){
+           $('#navi li .navi_sec, #navi_bg').stop().slideDown('fast');
+            }).mouseleave(function(){
+            $('#navi li .navi_sec, #navi_bg').stop().slideUp('fast');
+            
+        });
+        
+     
+        
+        
+        
+        
+        
+    
+        
+    }); // JQuery 종료
+    
+    </script>
+    <link rel="stylesheet" href="css/common.css">
+    <!--<link rel="stylesheet" href="css/jquery.fullPage.css">-->
+    <link rel="stylesheet" href="css/style.css"><!-- 음료 돌아가는거 스타일-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+       
+        
+        
+    
+    </style>
+    
+</head>
+<body>
+    <!--#top>#top_wrap>h1#logo>a^#navi>ul>li*4>a[href=#]-->
+    <div class="gnb_wrap">
+    <div id="top">
+        <div id="top_wrap">
+            <div id="logo" class="center" class="logo_other">
+               <h2>
+               <a href="main.html"><img src="img/logo2.png" alt="main_logo"></a>
+                </h2>
+                <h3>
+               <a href="main.html"><img src="img/logo3.png" alt="main_logo"></a>
+                </h3>
+            </div>
+            <div class="mb_menu">
+                <a href="#">
+                    <img src="img/menu2.png" alt="메뉴">
+                </a>
+                
+            </div>
+            
+            <div class="mobile_bg">
+                
+                
+            </div>
+            <div id="mb_navi">
+
+                <span class="close">
+                    <i class="material-icons">
+                        <!--아이콘임-->
+                        clear
+                    </i>
+                </span>
+            </div>
+            
+            <div id="navi" class="center">
+                <ul>
+                    <li data-menuanchor="firstPage" class="active">
+                    <a href="#firstPage">미에로</a>
+                    <div class="navi_sec">
+                        <ul>
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">식이섬유 스토리</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li data-menuanchor="secondPage">
+                    <a href="#secondPage">제품소개</a>
+                    <div class="navi_sec">
+                        <ul>
+                            <li><a href="#">미에로화이바</a></li>
+                            <li><a href="#">헬시올리고</a></li>
+                            <li><a href="#">헬씨올리고 프로바이오틱스</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li data-menuanchor="3rdPage">
+                    <a href="#3rdPage">미에로 스토리</a>
+                    <div class="navi_sec">
+                        <ul>
+                            <li><a href="#">TV광고</a></li>
+                            <li><a href="#">인쇄광고</a></li>
+                            <li><a href="#">프로모션</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li data-menuanchor="4thPage">
+                    <a href="#4thPage">미에로 이벤트</a>
+                    <div class="navi_sec">
+                        <ul>
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </div></li>
+                    <li data-menuanchor="5thPage"><a href="#5thPage">공지사항</a>
+                    <div class="navi_sec">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+   
+    <div class="navi_bg">
+        
+        
+    </div><!-- navi_bg -->
+    </div> <!-- top -->
+     </div><!-- gnb_wrap -->
+    
+    <!--#wrap>(#home>#home_wrap.center>h2)*4-->
+    <div id="fullpage">
+        <div id="home" class="section active">
+            <div id="home_wrap">
+                <!--<h2>1</h2>-->
+                <video src="movie/main_bg.mp4" width="100%" height="100%" autoplay muted playsinline loop></video>
+                <div>
+                <div>
+                <div class="just_wrap">
+                <h1>#SNS에</h1><h1>#인증샷을</h1><h1>#남겨주세요</h1>
+                </div><!-- just_wrap -->
+                </div>
+                </div>
+                <div class="cover">
+                </div>
+            </div><!-- home_wrap -->
+            
+        </div>
+        <div id="profile" class="section">
+            <div id="profile_wrap" class="center">
+                <!--<h2>2</h2>-->
+                <div class="box_wrap">
+                    <h1>당신이</h1><h1>몰랐던</h1><h1>식이섬유</h1>
+                <ul>
+                <li><h3>식이섬유란?</h3></li>
+                <li><h3>식이섬유 기능</h3></li>
+                <li><h3>식이섬유를 섭취하려면?</h3></li>
+                </ul>
+                <h3>식이섬유란?</h3>
+                <span>사람의 소화효소로 분해되지 않는 성분, 몸 속의 과다한 양분흡수를 막아주고, 장의 리듬을 조절하며,<br>음식물이 장 속에 머무는 시간을 단축시키는 등 현대 식생활에 꼭 필요한 물질로 제 7의 영양소로 주목 받고 있다.</span>
+                </div><!-- box_wrap -->
+                
+                <div class="vege">
+                    <!--<img src="img/vege.png" alt="야채사진">-->
+                </div>
+            </div><!-- profile_wrap -->
+        </div><!-- profile -->
+        
+        <div id="mierofiber" class="section">
+            <div id="Portfolio_wrap" class="center">
+                <h2>Miero Fiber 종류</h2>
+            </div>
+            <ul class="circle">
+                <li><img src="img/left.png" alt="물방울 무늬"></li>
+                <li><img src="img/right.png" alt="물방울 무늬"></li>
+                
+            </ul>
+            <div id="product-carousel-container">
+  <ul id="product-carousel">
+    <li class="item-1">
+      <img src="img/dirnk04.png">
+    </li>
+    <li class="item-2">
+      <img src="img/drink03.png">
+    </li>
+    <li class="item-3">
+      <img src="img/drink02.png">
+    </li>
+    <li class="item-4">
+      <img src="img/drink01.png">
+    </li>
+    <li class="item-5">
+      <img src="img/dirnk06.png">
+    </li>
+    <li class="item-6">
+      <img src="img/dirnk05.png">
+    </li>
+    <li class="item-7">
+      <img src="img/miero03.png">
+    </li>
+  </ul>
+
+  <div id="product-carousel-nav">
+    <button class="carousel-nav prev"></button>
+    <button class="carousel-nav next"></button>
+  </div>
+<!--  <div id="carousel-dots">
+    <ul>
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>-->
+</div>
+        </div>
+        <div id="feature" class="section clearfix" >
+            <div id="Portfolio_wrap" class="center">
+                <div>
+                    <span>
+                        <div class="img_wrap">
+                            <img src="img/miero_log.png" alt="mierofiver_log">
+                        </div><!-- img_wrap -->
+                        <h2>특징</h2>
+                    </span>
+                    <span>몸매 Design : 과다한 영양섭취를 막고 음식물이         장에 머무르는 시간을 줄여주는
+                        역할을 하는 식이섬유 2.5g이 함유되어 몸매 Design에 도움을 줍니다.
+                        안전하고 위생적인 시설에서 제조 (제 34회 국가품질경영 수상, HACCP 지정, CCM인증)
+                        대한민국 식이섬유 음료의 원조격으로 꾸준히 사랑받고 있습니다.
+                    </span>
+                </div>
+
+            </div><!-- Portfolio_wrap -->
+        </div>
+        <div id="SNS" class="section">
+            <div id="Guest_wrap" class="center">
+                <h2>INSTAGRAM</h2>
+                <div class="SNS_pics">
+                    <span><a href="#"><img src="img/1.jpg" alt="SNS 후기 사진1"><img src="img/fra.png" alt="sns_cover"></a></span>
+                    <span><a href="#"><img src="img/2.jpg" alt="SNS 후기 사진2"><img src="img/fra.png" alt="sns_cover"></a></span>
+                    <span><a href="#"><img src="img/3.jpg" alt="SNS 후기 사진3"><img src="img/fra.png" alt="sns_cover"></a></span>
+                    <span><a href="#"><img src="img/4.jpg" alt="SNS 후기 사진4"><img src="img/fra.png" alt="sns_cover"></a></span>
+                    <span><a href="#"><img src="img/5.jpg" alt="SNS 후기 사진5"><img src="img/fra.png" alt="sns_cover"></a></span>
+                    <span><a href="#"><img src="img/6.jpg" alt="SNS 후기 사진6"><img src="img/fra.png" alt="sns_cover"></a></span>
+                    <span><a href="#"><img src="img/7.jpg" alt="SNS 후기 사진7"><img src="img/fra.png" alt="sns_cover"></a></span>
+                    <span><a href="#"><img src="img/8.jpg" alt="SNS 후기 사진8"><img src="img/fra.png" alt="sns_cover"></a></span>
+                    
+                </div><!-- SNS_pics -->
+            </div><!-- Guest_wrap -->
+        </div><!-- SNS -->
+        
+        <div id="last_part" class="clearfix">
+            <div class="left_part clearfix">
+               <div class="just_wrap">
+                <span><img src="img/dirnk04.png" alt=미에로화이바 음료 사진></span>
+                <div class="all_wrap">
+                    <div class="two_letter">
+                        <h2>미에로화이바</h2>
+                        <h5>피로할때 마시는 미에로화이바</h5>
+                    </div>
+                    <div class="more">
+                        <a href="#">
+                            <h3>자세히 보기</h3>
+                        </a>
+                    </div>
+                </div><!-- all_wrap -->
+                </div><!-- just_wrap -->
+            </div><!-- left_part -->
+            
+
+               <div class="right_part clearfix">
+               <div class="just_wrap">
+                <span><img src="img/dirnk06.png" alt=헬씨올리고 음료 사진></span>
+                <div class="all_wrap">
+                    <div class="two_letter">
+                        <h2>헬씨올리고</h2>
+                        <h5>시원하고 깔끔한 맛</h5>
+                    </div>
+                        <div class="more">
+                            <a href="#">
+                                <h3>자세히 보기</h3>
+                            </a>
+                        </div>
+                    </div>
+
+                </div><!-- just_wrap -->
+                </div><!-- right_part -->
+            </div><!-- last_part -->
+        </div> <!-- fullpage -->
+        
+        
+        
+    <div id="footer">
+        <div id="footer_wrap" class="center">
+        <div class="box1">
+            <ul>
+               <li><a href="#">
+                    미에로</a>
+                </li>
+                <li><a href="#">
+                    브랜드 스토리</a>
+                </li>
+                <li><a href="#">
+                    식이섬유 스토리</a>
+                </li>
+            </ul>
+            <ul>
+               <li><a href="#">
+                    제품소개</a>
+                </li>
+                <li><a href="#">
+                    미에로화이바</a>
+                </li>
+                <li><a href="#">
+                    헬시올리고</a>
+                </li>
+                <li><a href="#">
+                   프로바이오틱스</a>
+                </li>
+            </ul>
+            <ul>
+               <li><a href="#">
+                    제품소개</a>
+                </li>
+                <li><a href="#">
+                    미에로화이바</a>
+                </li>
+                <li><a href="#">
+                    헬시올리고</a>
+                </li>
+                <li><a href="#">
+                   프로바이오틱스</a>
+                </li>
+            </ul>
+            <ul>
+               <li><a href="#">
+                    미에로 스토리</a>
+                </li>
+                <li><a href="#">
+                    TV광고</a>
+                </li>
+                <li><a href="#">
+                    인쇄광고</a>
+                </li>
+                <li><a href="#">
+                   프로모션</a>
+                </li>
+            </ul>
+            <ul>
+               <li><a href="#">
+                    미에로 이벤트</a>
+                </li>
+                <li><a href="#">
+                    진행중인 이벤트</a>
+                </li>
+                <li><a href="#">
+                    당첨자 발표</a>
+                </li>
+            </ul>
+            <ul>
+               <li><a href="#">
+                    공지사항</a>
+                </li>
+                <li><a href="#">
+                    NEW &amp;Notice</a>
+                </li>
+            </ul>
+            <ul>
+               <li><a href="#">
+                    현대약품</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="sns">
+           <ul>
+               <li>
+                   <a href="#"><img src="img/facebook.png" alt="facebook_log"></a>
+               </li>
+               <li>
+                   <a href="#"><img src="img/youtube.png" alt="youtube_log"></a>
+               </li>
+               <li>
+                   <a href="#"><img src="img/instagram.png" alt="instagram_log"></a>
+               </li>
+           </ul>
+            
+        </div>
+        
+        </div>
+        </div><!-- footer -->
+        <!-- For IE9 or below. -->
+
+    <i class="material-icons">
+    menu
+    </i>
+   
+    <script src="js/index.js"></script>
+    
+    
+    
+</body>
+</html>

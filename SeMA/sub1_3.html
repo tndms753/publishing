@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>main</title>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+   
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/SeMA_sub1_3.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sema.js"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--favicon 넣기-->
+    <!--아이폰 홈화면 아이콘-->
+    <link rel="apple-touch-icon-precomposed" href="img/sema_favicon.png">
+    
+    <!--브라우저 창 제목 표시줄에 보여주기-->
+    <link rel="shortercut icon" href="img/sema_favicon.png">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 사용하세요"></script>
+    <script>
+     
+      $(function(){ //JQuery 준비
+        //go top 클릭시 맨위로 스크롤 되며 작동하기
+        $('.go_top').click(function(){
+            $('html, body').animate({
+                scrollTop : 0
+            },500);
+            return false;
+        });
+          // 스크롤 하면 go top 보이게 하기
+        var offset = 200;
+        $(window).scroll(function(){
+           var st =$(this).scrollTop(); // 지역변수! 이건 여기 안에서만 쓸수 있음! 위에 var 전역변수! 밖에서 안에서든 다 사용 가능!
+            
+            if(st > offset && $(this).width()>768){
+                $('.go_top').fadeIn(500); //go top이 서서히 나타나기
+            }else{
+                $('.go_top').fadeOut(500);//go top이 서서히 없어지기
+            }
+            });
+            $(window).resize(function(){
+            if($(this).width()<=768){ $('.go_top').hide(); }
+        });
+            
+            
+          
+          
+          
+            
+          
+          
+        var h_top; //각 콘텐츠 영역 top 위치
+        var box_name, box_id;
+            
+$('.content_wrap > ul > li').eq(0).addClass('on');
+        
+        $('.content_wrap > ul > li').click(function(){
+           box_name =$(this).find('a').attr('href');
+           box_id = box_name.substr(1);
+            // 문자열 중에서 추출해내는것 id 명 뒤로 #뒤에 글자들을 알아서 추출해줌
+            h_top = $('#box_wrap #'+box_id).offset().top;//offset은 위치값을 알고싶을때 쓴다!
+           /* console.log(h_top);*/ //이건 콘솔에서 제대로 위치 값을 갖는지 본거임
+            
+            $('html, body').animate({
+                scrollTop : h_top
+            },400);
+            return false;
+        });
+  //여기 안에다 쓰는 건 스크롤이 되면서 동시에 상단에 프로필 포토폴리오를 누르면 노란색으로 글씨가 바껴야 하기 때문에 스크롤 다음에 여기 안에다가 같이(클릭시 색 변함) 사용해야 한다
+            $('#wrap > div').each(function(){
+                var i = $(this).index();
+                
+                if($(this).offset().top - 50 <= st){
+                    $('.content_wrap > ul > li').removeClass('on');
+                    $('.content_wrap > ul > li').eq(i).addClass('on');
+                }
+            })
+          
+          
+          
+          
+      }); // JQuery 종료
+        
+        
+        
+        
+        
+    </script>
+</head>
+
+
+<body>
+     <? include "header.html" ?>
+    
+    <div class="content">
+     
+      <div class="sub_bg">
+          <div id="map" style="width:100%;height:350px;"></div>
+      </div>
+      
+      <div class="letter_wrap">
+      <span class="letter">
+          <a href="sub1.html">비전 / 전략</a>
+          <a href="sub1_2.html">미술관 소개</a>
+          <a href="sub1_3.html">오시는 길</a>
+      </span>
+      </div>
+  </div>
+  <div class="top center">
+     <div class="content_wrap">
+      
+      <ul>
+          <li>
+              <a href="#box1">
+                 서소문본관
+              </a>
+          </li>
+          <li>
+              <a href="#box2">
+                 북서울미술관
+              </a>
+          </li>
+          <li>
+              <a href="#box3">
+                 남서울미술관
+              </a>
+          </li>
+          <li>
+              <a href="#box4">
+                  난지미술창작스튜디오
+              </a>
+          </li>
+          <li>
+              <a href="#box5">
+                  SeMA창고
+              </a>
+          </li>
+          <li>
+              <a href="#box6">
+                  SeMA벙커
+              </a>
+          </li>
+      </ul>
+     </div><!-- content_wrap -->
+  </div><!-- top-->
+  
+  <div id="box_wrap">
+  <div id="box1" class="center">
+      <div class="box1_1">
+          <h2>서소문본관</h2>
+          <h5>서울 중구 덕수궁길 61 (서소문동)</h5>
+          <h5>02-2124-8800(ARS)</h5>
+      </div>
+      <div class="box1_2" clearfix>
+          <ul clearfix>
+              <li>
+                  <span>지하철 이용시</span>
+                  <div class="subway_letter">
+                     <h4>1호선 : 시청역 1번 출구 &#40;서울시청 서소문청사방면&#41;</h4>
+                     <h4>2호선 : 시청역 11번 출구나 12번 출구, 10번 출구</h4>
+                      <h4>5호선 : 서대문역 5번 출구나 광화문역 6번 출구</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>버스 이용시</span>
+                  <div class="subway_letter">
+                     <h4>파랑(간선)버스 : 172, 472, 600, 602, 603</h4>
+                     <h4>'광화문'이나 '시청앞'에서 내려서 걸어오실 수도 있습니다.</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>자가용 이용시</span>
+                  <div class="subway_letter">
+                     <h4>광화문쪽에서 오실 때 : 덕수궁 정문에서 우측의 샛길로 우회전</h4>
+                     <h4>남대문쪽에서 오실 때 : 광화문까지 직진하여 광화문 앞에서 U턴 후
+                                덕수궁까지 직진하여덕수궁 정문에서 우측의
+                                샛길로 우회전</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>주차안내</span>
+                  <div class="subway_letter">
+                     <h4>평일(월-금)           5분당 400원</h4>
+                     <h4>토ㆍ일ㆍ공휴일      5분당 300원 </h4>
+                  </div>
+              </li>
+              
+          </ul>
+      </div>
+      
+      
+  </div>
+  <div id="box2" class="center">
+      <div class="box1_1">
+          <h2>북서울미술관</h2>
+          <h5>서울 중구 덕수궁길 61 (서소문동)</h5>
+          <h5>02-2124-8800(ARS)</h5>
+      </div>
+      <div class="box1_2" clearfix>
+          <ul clearfix>
+              <li>
+                  <span>지하철 이용시</span>
+                  <div class="subway_letter">
+                     <h4>1호선 : 시청역 1번 출구 &#40;서울시청 서소문청사방면&#41;</h4>
+                     <h4>2호선 : 시청역 11번 출구나 12번 출구, 10번 출구</h4>
+                      <h4>5호선 : 서대문역 5번 출구나 광화문역 6번 출구</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>버스 이용시</span>
+                  <div class="subway_letter">
+                     <h4>파랑(간선)버스 : 172, 472, 600, 602, 603</h4>
+                     <h4>'광화문'이나 '시청앞'에서 내려서 걸어오실 수도 있습니다.</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>자가용 이용시</span>
+                  <div class="subway_letter">
+                     <h4>광화문쪽에서 오실 때 : 덕수궁 정문에서 우측의 샛길로 우회전</h4>
+                     <h4>남대문쪽에서 오실 때 : 광화문까지 직진하여 광화문 앞에서 U턴 후
+                                덕수궁까지 직진하여덕수궁 정문에서 우측의
+                                샛길로 우회전</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>주차안내</span>
+                  <div class="subway_letter">
+                     <h4>평일(월-금)           5분당 400원</h4>
+                     <h4>토ㆍ일ㆍ공휴일      5분당 300원 </h4>
+                  </div>
+              </li>
+              
+          </ul>
+      </div>
+      
+      
+  </div>
+  <div id="box3" class="center">
+      <div class="box1_1">
+          <h2>남서울미술관</h2>
+          <h5>서울 중구 덕수궁길 61 (서소문동)</h5>
+          <h5>02-2124-8800(ARS)</h5>
+      </div>
+      <div class="box1_2" clearfix>
+          <ul clearfix>
+              <li>
+                  <span>지하철 이용시</span>
+                  <div class="subway_letter">
+                     <h4>1호선 : 시청역 1번 출구 &#40;서울시청 서소문청사방면&#41;</h4>
+                     <h4>2호선 : 시청역 11번 출구나 12번 출구, 10번 출구</h4>
+                      <h4>5호선 : 서대문역 5번 출구나 광화문역 6번 출구</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>버스 이용시</span>
+                  <div class="subway_letter">
+                     <h4>파랑(간선)버스 : 172, 472, 600, 602, 603</h4>
+                     <h4>'광화문'이나 '시청앞'에서 내려서 걸어오실 수도 있습니다.</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>자가용 이용시</span>
+                  <div class="subway_letter">
+                     <h4>광화문쪽에서 오실 때 : 덕수궁 정문에서 우측의 샛길로 우회전</h4>
+                     <h4>남대문쪽에서 오실 때 : 광화문까지 직진하여 광화문 앞에서 U턴 후
+                                덕수궁까지 직진하여덕수궁 정문에서 우측의
+                                샛길로 우회전</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>주차안내</span>
+                  <div class="subway_letter">
+                     <h4>평일(월-금)           5분당 400원</h4>
+                     <h4>토ㆍ일ㆍ공휴일      5분당 300원 </h4>
+                  </div>
+              </li>
+              
+          </ul>
+      </div>
+      
+      
+  </div>
+  <div id="box4" class="center">
+      <div class="box1_1">
+          <h2>난지미술창작스튜디오</h2>
+          <h5>서울 중구 덕수궁길 61 (서소문동)</h5>
+          <h5>02-2124-8800(ARS)</h5>
+      </div>
+      <div class="box1_2" clearfix>
+          <ul clearfix>
+              <li>
+                  <span>지하철 이용시</span>
+                  <div class="subway_letter">
+                     <h4>1호선 : 시청역 1번 출구 &#40;서울시청 서소문청사방면&#41;</h4>
+                     <h4>2호선 : 시청역 11번 출구나 12번 출구, 10번 출구</h4>
+                      <h4>5호선 : 서대문역 5번 출구나 광화문역 6번 출구</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>버스 이용시</span>
+                  <div class="subway_letter">
+                     <h4>파랑(간선)버스 : 172, 472, 600, 602, 603</h4>
+                     <h4>'광화문'이나 '시청앞'에서 내려서 걸어오실 수도 있습니다.</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>자가용 이용시</span>
+                  <div class="subway_letter">
+                     <h4>광화문쪽에서 오실 때 : 덕수궁 정문에서 우측의 샛길로 우회전</h4>
+                     <h4>남대문쪽에서 오실 때 : 광화문까지 직진하여 광화문 앞에서 U턴 후
+                                덕수궁까지 직진하여덕수궁 정문에서 우측의
+                                샛길로 우회전</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>주차안내</span>
+                  <div class="subway_letter">
+                     <h4>평일(월-금)           5분당 400원</h4>
+                     <h4>토ㆍ일ㆍ공휴일      5분당 300원 </h4>
+                  </div>
+              </li>
+              
+          </ul>
+      </div>
+      
+      
+  </div>
+  <div id="box5" class="center">
+      <div class="box1_1">
+          <h2>SeMA창고</h2>
+          <h5>서울 중구 덕수궁길 61 (서소문동)</h5>
+          <h5>02-2124-8800(ARS)</h5>
+      </div>
+      <div class="box1_2" clearfix>
+          <ul clearfix>
+              <li>
+                  <span>지하철 이용시</span>
+                  <div class="subway_letter">
+                     <h4>1호선 : 시청역 1번 출구 &#40;서울시청 서소문청사방면&#41;</h4>
+                     <h4>2호선 : 시청역 11번 출구나 12번 출구, 10번 출구</h4>
+                      <h4>5호선 : 서대문역 5번 출구나 광화문역 6번 출구</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>버스 이용시</span>
+                  <div class="subway_letter">
+                     <h4>파랑(간선)버스 : 172, 472, 600, 602, 603</h4>
+                     <h4>'광화문'이나 '시청앞'에서 내려서 걸어오실 수도 있습니다.</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>자가용 이용시</span>
+                  <div class="subway_letter">
+                     <h4>광화문쪽에서 오실 때 : 덕수궁 정문에서 우측의 샛길로 우회전</h4>
+                     <h4>남대문쪽에서 오실 때 : 광화문까지 직진하여 광화문 앞에서 U턴 후
+                                덕수궁까지 직진하여덕수궁 정문에서 우측의
+                                샛길로 우회전</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>주차안내</span>
+                  <div class="subway_letter">
+                     <h4>평일(월-금)           5분당 400원</h4>
+                     <h4>토ㆍ일ㆍ공휴일      5분당 300원 </h4>
+                  </div>
+              </li>
+              
+          </ul>
+      </div>
+      
+      
+  </div>
+  <div id="box6" class="center">
+      <div class="box1_1">
+          <h2>SeMA벙커</h2>
+          <h5>서울 중구 덕수궁길 61 (서소문동)</h5>
+          <h5>02-2124-8800(ARS)</h5>
+      </div>
+      <div class="box1_2" clearfix>
+          <ul clearfix>
+              <li>
+                  <span>지하철 이용시</span>
+                  <div class="subway_letter">
+                     <h4>1호선 : 시청역 1번 출구 &#40;서울시청 서소문청사방면&#41;</h4>
+                     <h4>2호선 : 시청역 11번 출구나 12번 출구, 10번 출구</h4>
+                      <h4>5호선 : 서대문역 5번 출구나 광화문역 6번 출구</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>버스 이용시</span>
+                  <div class="subway_letter">
+                     <h4>파랑(간선)버스 : 172, 472, 600, 602, 603</h4>
+                     <h4>'광화문'이나 '시청앞'에서 내려서 걸어오실 수도 있습니다.</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>자가용 이용시</span>
+                  <div class="subway_letter">
+                     <h4>광화문쪽에서 오실 때 : 덕수궁 정문에서 우측의 샛길로 우회전</h4>
+                     <h4>남대문쪽에서 오실 때 : 광화문까지 직진하여 광화문 앞에서 U턴 후
+                                덕수궁까지 직진하여덕수궁 정문에서 우측의
+                                샛길로 우회전</h4>
+                  </div>
+              </li>
+              <li>
+                  <span>주차안내</span>
+                  <div class="subway_letter">
+                     <h4>평일(월-금)           5분당 400원</h4>
+                     <h4>토ㆍ일ㆍ공휴일      5분당 300원 </h4>
+                  </div>
+              </li>
+              
+          </ul>
+      </div>
+      
+      
+  </div>
+ 
+</div>
+    <div class="go_top"><a href="#">Go Top</a></div>
+     <? include "footer.html" ?>
+    
+
+ 
+     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d8c6d8daf0ac54f0802247d1cdb9d92"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.5642378,126.9746359), // 지도의 중심좌표를 카카오 맵에 주소창에서 복사해서 붙여 넣기
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption);
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.5642378,126.9746359); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+var iwContent = '<div style="padding:5px; text-align:center">서울시립미술관 <br><a href="https://map.kakao.com/link/map/Hello World!,37.5642378,126.9746359" style="color:blue" target="_blank">큰지도보기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+    iwPosition = new kakao.maps.LatLng(37.5642378,126.9746359); //인포윈도우 표시 위치입니다
+
+// 인포윈도우를 생성합니다
+var infowindow = new kakao.maps.InfoWindow({
+    position : iwPosition, 
+    content : iwContent 
+});
+  
+// 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+infowindow.open(map, marker); 
+</script>
+
+    
+</body>
+
+</html>

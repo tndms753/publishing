@@ -1,0 +1,209 @@
+@charset "utt-8";
+body {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: normal;
+}
+.sub_bg {
+    background: url(http://goodpage.dothome.co.kr/SeMA/img/sub/sub1_2_img/main.jpg) 0 0 no-repeat;
+    padding-bottom: 12.5%;
+    background-size: cover;
+}
+.letter_wrap {
+    width: 100%;
+    height: 50px;
+    background: #ccb2a3;
+}
+.letter_wrap .letter {
+    text-align: center;
+    display: block;
+}
+.letter_wrap .letter a {
+    color: #333333;
+    font-size: 15px;
+    margin-right: 40px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.letter_wrap .letter a:hover{
+    color: #fff;
+}
+
+.boxes_wrap > h2{
+    text-align: center;
+    margin: 100px 0 70px;
+}
+.boxes_wrap .box1{
+    display: flex;/* 큰 부모에게 flex를 줬으면 그 자식에게 가로를 비율로 줘야 사이에 공간이 안생긴다!*/
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-bottom: 50px;
+   
+}
+.boxes_wrap .box1:nth-child(5){
+    border-bottom: 100px;
+}
+
+
+.boxes_wrap .box1 .box1_1{
+    width: 70%; /* 각각의 비율을 줌! why? flex를 해줬기 때문*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
+}
+.boxes_wrap .box1 .box1_1 h2{
+    margin: 30px 30px;
+    font-weight: normal;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+.boxes_wrap .box1 figure{
+    width: 30%; /* 각각의 비율을 줌! why? flex를 해줬기 때문*/
+    position: relative;
+}
+.boxes_wrap .box1 figure img{
+    width: 100%; /* 부모의 크기에 맞춰서 100%를  하라는 듯*/
+    vertical-align: top;
+   
+    
+}
+.boxes_wrap .box1 .just_wrap .black{
+    background: #000;
+    height: 40px;
+
+}
+.boxes_wrap .box1 .just_wrap .black h4{
+    flex: none;
+    display:inline-block;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    padding: 0 10px;
+    margin: 0 20px;
+    font-weight: normal;
+}
+.boxes_wrap .box1 .just_wrap h5{
+    padding-left: 20px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.boxes_wrap .box1 .just_wrap .black h4::after{
+    border-left: 1px solid #fff;
+    height: 10px;
+    width: 0;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    content: '';
+    }
+
+
+.board_wrap .letter {
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 8px;
+    
+}
+.board_wrap .just_wrap{
+    border-bottom: 2px solid #999;
+}
+.board_wrap .letter h2{
+    font-size: 1.8em;
+}
+.board_wrap .letter span{
+   margin-top: 10px;
+   margin-left: 10px;
+}
+.board_box{
+    min-height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////// media query pc////////////////////////*/
+@media screen and (min-width:769px){
+ 
+  
+    
+    
+    
+} /* PC */
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////// media query////////////////////////*/
+@media screen and (max-width:768px){
+      
+    .sub_bg {
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+    article .pics ul li img{
+        vertical-align: top;
+    }
+      
+   
+    
+    article .pics ul li.big,article .pics ul li.small{
+        margin: 10px 2%;
+        width: 96%;
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+}/* mobile */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

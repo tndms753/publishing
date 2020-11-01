@@ -1,0 +1,26 @@
+서소문 본관
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3yhtgEqQtsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+북서울 미술관
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tjwA4YvI_ho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+남서울 미술관
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m3v-Uh2nNs0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+난지미술창작스튜디오
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_C7NhU2Ibv0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+SeMA창고
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gG_y20W3kxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+백남준기념관
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eMRjAhDmsnM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+SeMA 벙커
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vMREmYWZg8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

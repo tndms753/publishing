@@ -1,0 +1,21 @@
+아래 변수로 정의한후 imagesLoaded로 이미지를 모두 로드한후 masonry를 실행해야 겹치는 현상이 없어집니다.
+
+var $grid = $('.grid').imagesLoaded(function() {
+                // init Masonry after all images have loaded
+                $grid.masonry({
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+                });
+            });
+
+다른 방법
+$(window).load(function(){
+  var $gridbox = $('.grid');
+  $gridbox.masonry({
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+  });
+});
+

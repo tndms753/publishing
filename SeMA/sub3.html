@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>어린이 프로그램</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500,700&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+   
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/SeMA_sub3.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sema.js"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--favicon 넣기-->
+    <!--아이폰 홈화면 아이콘-->
+    <link rel="apple-touch-icon-precomposed" href="img/sema_favicon.png">
+    
+    <!--브라우저 창 제목 표시줄에 보여주기-->
+    <link rel="shortercut icon" href="img/sema_favicon.png">
+    <script>
+    $(function(){ // JQuery 준비
+        $('.tab_body > div').hide();
+        $('.tab_body > div').eq(0).show(); /*nth 처럼 객체를 말하는 거임*/
+        
+        $('.tab li').eq(0).addClass('selected');
+        
+        $('.tab li').click(function(){
+            $('.tab li').removeClass('selected');
+            $(this).addClass('selected');
+            console.log($(this).index()); /* 이건 f12번 눌렀을때 콘솔에 들어가서 클릭하면 볼수 있음*/
+            $('.tab_body > div').hide();
+            $('.tab_body > div').eq($(this).index()).show();/* index는 여기서 내가 누르는 번호를 자동으로 뜨게 해주는것이다. 굳이 지정하지 않아도!*/
+            
+            
+        });
+        
+        
+        
+        
+        
+        
+    }); // JQuery 종료
+        
+        
+        
+        
+    </script>
+</head>
+
+
+<body>
+    <!--header>(.logo>h2>a)+(.head>ul>li*4>a)+.menu>ul>li*5>a-->
+     <? include "header.html" ?>
+    
+    <div class="content">
+      <div class="sub_bg">
+          <!--<img src="img/sub/sub3_img/Untitled-1.jpg" alt="사진1">-->
+          <div class="next">
+          <a href="sub3_1.html">
+              <img src="img/sub/sub3_img/back-button.png" alt="back-button">
+          </a>
+          </div>
+      </div>
+      <div class="letter_wrap center">
+      <span class="letter">
+          <a href="sub3.html">어린이 프로그램</a>
+          <a href="sub3_1.html">청소년 프로그램</a>
+          <a href="sub1_3.html">대학생·성인 프로그램</a>
+      </span>
+      </div>
+  </div>
+<div class="kids center">
+    <h2>어린이 프로그램</h2>
+    <img src="img/sub/sub3_img/pic02.jpg" alt="사진02">
+<div id="container">
+       <ul class="tab">
+           <li><a href="#">주말교육 프로그램</a></li>
+           <li><a href="#">주중교육 프로그램</a></li>
+           <li><a href="#">방학교육 프로그램</a></li>
+       </ul>
+       <div class="tab_body clearfix">
+         <div class="div_wrap clearfix">
+          <figure>
+              <img src="img/sub/sub3_img/pic03.jpg" alt="사진03">
+          </figure>
+           <div clearfix>
+              <h2>주말교육 프로그램</h2>
+               <span>움직여봐요</span>
+
+               <p>키네틱아트
+               &lt;감상&gt; '움직임'을 요소로 하는 키네틱아트의 발상과 표현에 대해 이해
+               &lt;체험&gt; 투명 지퍼팩, 철사, 색종이 등을 이용해 자기만의 키네틱 아트를 제작
+               </p>
+           </div>
+           </div> <!-- div_wrap -->
+           <div class="div_wrap">
+           <figure>
+              <img src="img/sub/sub3_img/pic04.jpg" alt="사진04">
+          </figure>
+           <div>
+              <h2>주중교육 프로그램</h2>
+                <span>말해봐요</span>
+                    <p>소망하는 미술, 마음 그리기
+                   &lt;감상&gt; 꿈, 소망 등을 담은 동서양의 다양한 작품들을 감상
+                   &lt;체험&gt; 작품 중 하나를 선택하여 들려주는 이야기를 듣고 상상해 그려보고, 마음이 담긴 글이나 미래의 꿈을 엽서에 표현
+               </p>
+               <span>느껴봐요</span>
+
+               <p>추상화로 오감 일깨우기
+               &lt;감상&gt; 일반적으로 추상화라고 불리는 작품들을 감상하면서 이러한 작품이
+               등장한 배경을 살펴보고 자신의 생각을 투영하여 감상
+               &lt;체험&gt; 다양한 음악, 동영상, 이야기 등을 듣고 오감을 일깨워 아코디언 형식의 책에 자신의 마음을 담은 작품 제작
+               </p>
+           </div>
+            </div>
+            <div class="div_wrap">
+            <figure>
+              <img src="img/sub/sub3_img/pic05.jpg" alt="사진05">
+          </figure>
+           <div>
+             <h2>방학교육 프로그램</h2>
+             <p>많은 이들이 결혼에 골인하지만 그 과정이 매번 순탄 한 것만은 아니다. 긴 연애의 끝에 결혼을 결심 했지만, 준비하는 과정에서 다양한 주제로 다툼을 벌이기도 한다. 실제로 보금자리 계약을 다 마친 상태에서도 갈라서는 연인들을 종종 볼 수 있다. 결혼은 두 사람이 만들어 가는 인생의 첫 과정이다. 조금만 양보하고 조심하면 파국을 막을 수 있다. 결혼을 준비하는 연인들이 하지 말아야 할 행동은 어떤 것이 있을까.
+              </p>
+           </div>
+           </div>
+       </div>
+       
+   </div>
+        <div class="apply">
+            <h2 class="letter">
+                <span>
+                    예정 어린이 프로그램
+                </span>
+            </h2>
+            <div>
+                <figcaption>
+                    <img src="img/sub/sub3_img/prev_program01.jpg" alt="사진01">
+                    <h3>빛의 너머 그림자 속으로</h3>
+                    <h5>2020. 01. 08 - 2020. 01. 08</h5>
+                </figcaption>
+                <figcaption>
+                    <img src="img/sub/sub3_img/prev_program02.jpg" alt="사진02">
+                    <h3>반사반사 거울왕국</h3>
+                    <h5>2020. 01. 10 - 2020. 01. 10</h5>
+                </figcaption>
+                <figcaption>
+                    <img src="img/sub/sub3_img/prev_program03.jpg" alt="사진03">
+                    <h3>빛의 너머 그림자 속으로:저학년</h3>
+                    <h5>2020.01.15 - 2020. 01. 15</h5>
+                </figcaption>
+                <figcaption>
+                    <img src="img/sub/sub3_img/prev_program04.jpg" alt="사진04">
+                    <h3>빛의 너머 그림자 속으로:고학년</h3>
+                    <h5>2020.01.08 - 2020. 01. 08</h5>
+                </figcaption>
+                
+                <figcaption>
+                    <img src="img/sub/sub3_img/prev_program01.jpg" alt="사진01">
+                    <h3>빛의 너머 그림자 속으로</h3>
+                    <h5>2020.01.08 - 2020. 01. 08</h5>
+                </figcaption>
+                <figcaption>
+                    <img src="img/sub/sub3_img/prev_program02.jpg" alt="사진02">
+                    <h3>반사반사 거울왕국</h3>
+                    <h5>2020.01.10 - 2020. 01. 10</h5>
+                </figcaption>
+                <figcaption>
+                    <img src="img/sub/sub3_img/prev_program03.jpg" alt="사진03">
+                    <h3>빛의 너머 그림자 속으로:저학년</h3>
+                    <h5>2020.01.15 - 2020. 01. 15</h5>
+                </figcaption>
+                <figcaption>
+                    <img src="img/sub/sub3_img/prev_program04.jpg" alt="사진04">
+                    <h3>빛의 너머 그림자 속으로:고학년</h3>
+                    <h5>2020.01.08 - 2020. 01. 08</h5>
+                </figcaption>
+            </div>
+        </div><!-- apply -->
+         <div class="number_wrap">
+                <div class="number">
+                    <h2>1</h2>
+                    <h2>2</h2>
+                    
+                </div>
+            </div>
+        </div>
+
+    
+     <? include "footer.html" ?>
+
+    
+
+ 
+  <script>
+     
+  </script>
+
+</body>
+
+</html>

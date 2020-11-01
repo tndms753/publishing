@@ -1,0 +1,13 @@
+﻿H&M 홈페이지 사항
+
+http://themebubble.com/demo/webify/shop 참고 사이트
+
+
+font-family: 'Circular',sans-serif;
+font-size: 21px; (소 메뉴들 ex..   Trending this week..
+font-family: 'Circular',sans-serif;
+
+
+
+
+font-size: 16px; (상품 밑 글자들)

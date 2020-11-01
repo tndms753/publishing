@@ -1,0 +1,486 @@
+@charset "utf-8";/*스타일에서 한글 안깨지게 하는것! 꼭 적기!*/
+
+/* 스타일 초기화*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font: 12px "맑은 고딕", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    
+}
+
+.clearfix::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+
+header.center{
+    
+    height: 90px;
+}
+.center{
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+.logo{
+    float: left;
+    padding-top: 20px;
+}
+.head{
+    margin-bottom: 20px;
+}
+.head_wrap{
+    float: right;
+    width: 65%;
+    margin-top: 20px;
+}
+.head ul{
+    float: right;
+}
+.head ul li{
+    float: left;
+}
+.head ul li:first-child img{
+    width: 25px;
+}
+.head ul li a{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    color: #666;
+    padding: 0 10px;
+}
+.head ul li a:hover{
+    color: #000;
+}
+.menu{
+    /*border-bottom: 1px solid #000;*/
+    margin-left: 50px;
+}
+.menu >ul > .empty{
+    display: none;
+}
+.menu >ul> li{
+    margin-bottom: 10px;
+}
+.menu >ul >li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+.menu >ul >li> a{
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+}
+.menu>ul> li> a:hover{
+    color: #9a6f45;
+}
+.menu>ul> li> a > img{
+    display: none;
+}
+
+    
+.menu > ul > li .menu_sec{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #dcccbf;
+    height: 200px;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+    display: none;
+    z-index: 100;
+}
+.menu > ul > li .menu_sec > ul{
+    margin-top: 20px;
+}
+
+.menu > ul > li .menu_sec > ul li a{
+    color: #000;
+    line-height: 30px;
+    display: block;
+}
+.menu > ul > li .menu_sec > ul li a:hover{
+    background: #a77e64;
+    color: #fff;
+}
+.logo .mobile, .mb_menu{
+    display: none;
+}
+
+
+#mb_navi{
+    position: fixed;
+    right: -100%;
+    width: 70%;
+    bottom: 0;
+    top: 90px;
+    z-index: 200;
+}
+.mobile_bg{
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    bottom: 0;
+    background: rgb(0,0,0,0.7);
+    top: 90px;
+    z-index: 199;
+}
+
+
+
+/*footer .....................................*/
+footer{
+    background: #dcccbf;
+    
+}
+footer .footer_wrap{
+    padding: 10px;
+}
+footer .box1{
+    width: 30%;
+    
+}
+footer .box1 h3{
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer .box2{
+    width: 30%;
+    text-align: center;
+    margin-top: 100px;
+}
+footer .box2 h3{
+    text-align: center;
+}
+footer .box2 ul{
+    text-align: center;
+    width: 100%;
+}
+footer .box2 ul li{
+    text-align: center;
+   
+
+}
+footer .box3{
+    width: 30%;
+    text-align: right;
+  
+}
+footer .box3 h3{
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+footer .box4 ul{
+    display: flex;
+    text-align: center;
+}
+footer .box4 ul li{
+    margin-right: 20px;
+    
+}
+footer .box4 ul li a{
+    color: #000;
+    font-weight: bold;
+    margin-right: 40px;
+    display: block;
+    line-height: 40px;
+}
+footer .footer_wrap{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+footer .footer_wrap h3{
+    font-weight: bold;
+}
+footer .footer_wrap .box2 h3{
+    margin-bottom: 10px;
+}
+footer .footer_wrap .box2 h3 a{
+    color: #000;
+    
+}
+
+
+
+
+
+
+
+/* 모바일 스타일 */
+@media screen and (max-width:768px) {
+    
+    header.center{
+        margin: 0 auto;
+    }
+    .gnb_wrap{
+        width: 100%;
+        z-index: 200;
+        background: #fff;
+        height: 90px;
+    }
+    .menu {
+        display: none;
+    }
+
+    .gnb_wrap logo h2 a img.mobile {
+        width: 100px;
+        left: calc(50% - 53px);
+        position: absolute;
+        top: 20px;
+    }
+
+    #login,
+    #mb_menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+
+    }
+
+    #login {
+        left: 10px;
+    }
+    .head ul li{
+        display: none;
+    }
+    .head ul li:first-child{
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 30px;
+    }
+    .head ul li:first-child img{
+        width: 40px;
+        
+    }
+    .mb_menu{
+        display: block;
+         position: absolute;
+        right: 10px;
+        top: 30px;
+    }
+
+    #mb_menu {
+        right: 10px;
+    }
+
+    #sm_menu {
+        font: 1em /18px '나눔고딕', sans-serif;
+        color: #000;
+        width: 100%;
+        float: right;
+        height: 100%;
+        background: #101010;
+    }
+    #mb_navi > .empty{
+        height: 100px;
+        background: #353333;
+        position: relative;
+    }
+    #mb_navi > .empty > span{
+        bottom: 10px;
+        position: absolute;
+    }
+    #mb_navi > .empty > span a{
+        font-size: 13px;
+        color: #fff;
+        display: block;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        padding: 2px 10px;
+        
+    }
+    #mb_navi > .empty > span a:hover{
+        background: #fff;
+        color: #000;
+        display: block;
+    }
+    #mb_navi > .empty > span:nth-child(1){
+        left: 20px;
+    }
+     #mb_navi > .empty > span:nth-child(2){
+         left: 85px;
+    }
+    #mb_navi > .empty > span:nth-child(3){
+        right: 20px;
+    }
+
+    #sm_menu > ul > li {
+        background: #101010;
+        border-bottom: 1px solid #686868;
+    }
+
+    #sm_menu > ul > li > a {
+        color: #fff;
+        font-size: 25px;
+        height: 60px;
+        line-height: 60px;
+        text-indent: 10px;
+        display: block;
+        font-weight: bold;
+    }
+    #sm_menu > ul > li > a img{
+        margin-right: 10px;
+        margin-top: 10px;
+        vertical-align: middle;
+        float: right;
+        display: block;
+    
+    }
+    #sm_menu > ul > li > a.selected img{
+        transform: rotate(180deg);
+        
+    }
+
+    #sm_menu > ul > li > span > a {
+        background-color: #000;
+        display: block;
+        text-indent: 1em;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    
+
+
+    
+    
+    /* 모바일 서브메뉴 스타일 */
+    #sm_menu > ul > li > .menu_sec ul li a {
+        background: #000;
+        display: block;
+        text-indent: 3em;
+        color: #fff;
+        font-size: 1.1em;
+        line-height: 40px;
+        height: 40px;
+        
+    }
+
+    #sm_menu > ul > li > .menu_sec ul li a:hover {
+        background: #f7f7f4;
+        color: #333;
+    }
+
+    #mb_navi span.close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+
+    #mb_navi span.close .material-icons {
+        color: #fff;
+        font-size: 30px;
+    }
+
+
+    #sm_menu li .menu_sec {
+        display: none;
+    }/* 모바일 메뉴 구조 */
+    
+    
+    
+    
+   /* ////// 모바일 푸터 //////////*/
+    footer .footer_wrap{
+        flex-wrap: wrap;
+        display: block;
+        
+        
+    }
+    footer .footer_wrap .box1{
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer_wrap .box2{
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer_wrap .box2 ul li{
+        margin: 0;
+    }
+    footer .footer_wrap .box3{
+        width: 100%;
+        text-align: center;  
+    
+    }
+    footer .box4 ul{
+        padding: 10px 0;
+        justify-content: center;
+    }
+    footer .box4 ul li a{
+        font-size: 11px;
+        margin-right: 10px;
+    
+    }
+     
+
+
+
+
+
+}
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

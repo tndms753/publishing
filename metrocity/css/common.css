@@ -1,0 +1,137 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font: 12px 'Playfair Display SC', serif;
+    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+.clearfix::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.center {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* 네비게이션 */
+.navi_wrap{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+   
+}
+.navi_wrap:hover .navi_top_wrap{
+      background-color: rgba(244, 240, 240,1);
+}
+.navi_top_wrap{
+   /* background-color: rgba(255, 255, 255, 0.8);*/
+    height: 30px;
+    width: 100%;
+    line-height: 13px;
+   
+}
+.navi_top ul{
+    display: flex;
+    float: right;
+    padding: 10px 0;
+}
+.navi_top ul li{
+    margin-right: 30px;
+}
+.navi_top ul li a{
+    color: #fff;
+    font-size: 15px;
+}
+.navi_wrap:hover .navi_top ul li a{
+    color: #333;
+}
+.navi_wrap:hover .navi_bottom_wrap{
+      background: rgba(255,255,254,1);
+}
+.navi_wrap:hover .navi_bottom ul.first_ul li a{
+    color: #333;
+}
+.navi_wrap:hover .navi_bottom ul.second_ul li img {
+    
+}
+.navi_bottom_wrap{
+   /* background: rgba(0,0,0,0.7);*/
+    border-top: 1px solid #dbdbdb;
+}
+.navi_bottom > div{
+    display: flex;
+}
+.navi_bottom h1 img{
+    width: 160px;
+    height: 70px;
+    vertical-align: top;
+}
+.navi_bottom #pho1{
+    width: 80%; 
+}
+.navi_bottom ul.first_ul{
+    display: flex;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.navi_bottom ul.first_ul li{
+    margin-right: 10%;
+}
+.navi_bottom ul.first_ul li a{
+    color: #fff;
+    font-size: 19px;
+}
+.navi_bottom ul.second_ul{
+    display: flex;
+    padding: 30px 0 0 0;
+    width: 0;
+}
+.navi_bottom ul.second_ul li{
+    width: 22px;
+    height: 37px;
+    margin-right: 23px;
+}
+.navi_bottom ul.second_ul li.search{
+    float: right;
+}
+.navi_bottom ul.second_ul li form{
+    background-color: transparent;
+    outline-style: none;
+    border: 0;
+    position: absolute;
+    left: 14px;
+    top: 8px;
+    width: 125px;
+    height: 20px;
+    color: #5a292b;
+    }
+.navi_bottom ul.second_ul li img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

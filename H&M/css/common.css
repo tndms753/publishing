@@ -1,0 +1,177 @@
+@charset "utf-8";/*스타일에서 한글 안깨지게 하는것! 꼭 적기!*/
+
+/* 스타일 초기화*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font: 12px 'Roboto', sans-serif;;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    
+}
+
+.clearfix::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.center {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+
+
+/*네비게이션*/
+
+.top{
+    height: 70px;
+   /* background: #797979;*/
+}
+.logo{
+    float: left;
+    height: 100%;
+}
+.logo h2{
+    width: 70px;
+}
+.logo h2 img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    align-content: center;
+    margin-top: 14px;
+}
+.mb_menu{
+    display: none;
+}
+.close{
+    display: none;
+}
+.navi{
+    float: right;
+    display: flex;
+}
+.navi > ul:first-child{
+    display: flex;
+    
+}
+
+.navi > ul:first-child li{
+    margin-right: 35px;
+    align-content: center;
+}
+.navi > ul:first-child > li a{
+    color: #666;
+    font-size: 14px;
+    display: block;
+    line-height: 70px;
+}
+.navi > ul:nth-child(2){
+    display: flex;
+    width: 15%;
+    margin-top: 22px;
+   
+}
+.navi > ul:nth-child(2) li{
+    margin-right: 15px;
+    
+}
+.navi > ul:nth-child(2) li a{
+
+}
+.navi > ul:nth-child(2) li a img{
+    width: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .mb_menu{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+        
+    }
+    .top .navi ul li{
+        display: none;
+    }  
+    
+}/* 테블릿 */
+
+
+
+@media screen and (max-width:768px) {
+    
+    
+    
+
+    
+    
+    
+}/* mobile */
+        
+
+
+
+
+
+
+/* mobile과 테블릿에서 세부적으로 바꿀 부분 */
+
+@media screen and (max-width:1150px) {
+    header .top .logo h2 img{
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width:1130px) {
+    .ad_letter{
+        left: 3%;
+        bottom: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

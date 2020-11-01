@@ -1,0 +1,416 @@
+@charset "utt-8";
+body {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: normal;
+}
+.sub_bg {
+    background: url(../img/sub/sub1_2_img/main.jpg) 0 0 no-repeat;
+    padding-bottom: 12.5%;
+    background-size: cover;
+}
+.letter_wrap {
+    width: 100%;
+    height: 50px;
+    background: #ccb2a3;
+}
+.letter_wrap .letter {
+    text-align: center;
+    display: block;
+}
+.letter_wrap .letter a {
+    color: #333333;
+    font-size: 15px;
+    margin-right: 40px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.letter_wrap .letter a:nth-child(2) {
+    color: #fff;
+}
+.letter_wrap .letter a:hover {
+    color: #fff;
+}
+article .letter h2 {
+    font-size: 25px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+article > .letter > h3 {
+    margin-bottom: 80px;
+    font-size: 1.2em;
+}
+article .letter h2, article .letter h3 {
+    text-align: center;
+}
+article .box1 {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 20px 30px;
+    margin-bottom: 100px;
+
+}
+article .box1 span {
+    font-size: 1.2em;
+    line-height: 1.5em;
+
+}
+article .pics ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+article .pics ul li:nth-child(2) img{
+    margin-top: 30px;
+}
+article .pics ul li:nth-child(3) img{
+    margin-top: 30px;
+}
+article .pics ul li.big{
+    margin: 10px 1%;
+    width: 52%;
+}
+article .pics ul li.small{
+    margin: 10px 1%;
+    width: 44%;
+}
+article .pics ul li img {
+    max-width: 620px;
+    width: 100%;
+}
+
+
+
+
+.time_wrap {
+    width: 100%;
+    background: #d4c9c9;
+    padding-bottom: 30px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-top: 30px;
+    
+}
+.time_wrap .time{
+    flex-direction: column;
+}
+
+.time_wrap .time img{
+    margin-top: -50px;
+    
+}
+
+.time_wrap .time ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    padding-bottom: 40px;
+}
+.time_wrap .time img{
+    margin-top: -180px;
+    float: right;
+    width: 15%;
+    height: auto;
+}
+.time_wrap .time ul{
+    
+}
+.time_wrap .time ul li{
+    margin-right: 70px;
+    padding-right: 49px;
+    border-right: 1px solid #000;
+    display: block;
+}
+.time_wrap .time ul li:nth-child(4){
+    border-right: none;
+}
+.time_wrap .time ul li span{
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.time_wrap .time ul li h3{
+    font-size: 13px;
+}
+
+
+
+#modal_win{
+           
+        }
+        #modal_win h1{
+            font-size: 20px;
+            border-left: 10px solid #b57b7f;
+            border-bottom: 1px solid #b57b7f;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        #modal_win .modal{
+            display: flex;
+            flex-wrap: wrap; /*여기서 display: flex를 썻는데 그러면 줄이면 절때 안떨어진다 그래서 여기서 wrap을 쓴거다! 떨어지게 하기 위해*/
+            width: 95%;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            
+        }
+        .modal li{
+           margin: 5px 0.5%;
+           width: 24%;
+            margin-bottom: 50px;
+        }
+        .modal li span{
+            font-size: 1.1em;
+            text-align: center;
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+          
+        }
+        .modal li span:nth-child(4){
+            margin-left: 27%;
+        }
+        .modal li a img {
+            width: 100%;
+        }
+        
+        
+        
+        /* 화면 전체를 어둠게 */
+        #glayLayer{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(0,0,0,0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        #overLayer{
+            width: 650px;
+        }
+        #overLayer > div{
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+
+        }
+#overLayer > div  iframe{
+position: absolute;
+width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+#overLayer  span.close{
+            position: absolute;
+            top: -50px;
+            right: 10px;
+            cursor: pointer;
+            width: 30px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            /*background: #fff;*/
+        }
+
+#overLayer span.close .material-icons{
+    font-size: 50px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////// media query pc////////////////////////*/
+@media screen and (min-width:769px){
+  
+  
+    
+    
+    
+} /* PC */
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////// media query////////////////////////*/
+@media screen and (max-width:768px){
+      
+    .sub_bg {
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+    article .box1{
+        width: 91%;
+        padding: 20px 13px;
+        margin-bottom: 50px;
+    }
+
+    article .pics ul li img {
+        vertical-align: top;
+    }
+    article .pics ul li:nth-child(2) img , article .pics ul li:nth-child(3) img{
+        margin-top: 0;
+    }
+   
+
+
+
+    article .pics ul li.big,
+    article .pics ul li.small {
+        margin: 10px 2%;
+        width: 96%;
+        text-align: center;
+    }
+    .time_wrap {
+        margin-bottom: 100px;
+        margin-top: 150px;
+    }
+    .time_wrap .time img{
+        display: none;
+    }
+
+    .time_wrap .time ul {
+        display: block;
+        margin-top: 30px;
+        line-height: 20px;
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+
+    .time_wrap .time ul li {
+        border-right: none;
+        margin-bottom: 30px;
+        text-align: center;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    #modal_win h1 {
+        font-size: 20px;
+        border-left: 10px solid #b57b7f;
+        border-bottom: 1px solid #b57b7f;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    #modal_win .modal {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .modal li {
+        margin: 5px;
+        width: 95%;
+        margin-bottom: 28px;
+    }
+
+    .modal li span {
+        font-size: 1.3em;
+        text-align: center;
+        display: block;
+        margin-top: 5px;
+
+    }
+   
+
+    .modal li a img {
+        width: 100%;
+    }
+
+    #glayLayer {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    #overLayer {
+        width: 650px;
+    }
+
+    #overLayer > div {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+
+    }
+
+    #overLayer > div iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    #overLayer span.close {
+        position: absolute;
+        top: -50px;
+        right: 15px;
+        cursor: pointer;
+        width: 30px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        /*background: #fff;*/
+    }
+
+    #overLayer span.close .material-icons {
+        font-size: 50px;
+        color: #fff;
+    }
+    
+    
+    
+}/* mobile */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

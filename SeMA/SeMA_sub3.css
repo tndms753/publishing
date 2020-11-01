@@ -1,0 +1,174 @@
+@charset "utt-8";
+body {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: normal;
+}
+
+.letter_wrap {
+    width: 100%;
+    height: 50px;
+   /* background: #ccb2a3;*/
+    position: absolute;
+    bottom: 300px;
+    left: 50px;
+}
+.letter_wrap .letter {
+    text-align: center;
+    display: block;
+}
+.letter_wrap .letter a {
+    color: #333333;
+    font-size: 15px;
+    margin-right: 40px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.letter_wrap .letter a:first-child{
+    color: #fff;
+}
+.letter_wrap .letter a:hover{
+    color: #fff;
+}
+
+
+.content{
+    margin-bottom: 100px;
+}
+.sub_bg {
+    background: url(http://goodpage.dothome.co.kr/SeMA/img/sub/sub3_img/Untitled-1.jpg) 0 0 no-repeat fixed;
+    padding-bottom: 12.5%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.next{
+    
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    cursor: pointer;
+    animation: horizontal 1.0s ease-in-out infinite;
+}
+.next img{
+    width: 30px;
+    height: auto;
+}
+
+@keyframes horizontal {
+  0% {
+    margin-right: 0px;
+  }
+  50% {
+    margin-right: -4px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+
+.sub_bg img:hover{
+    color: #fff;
+}
+.kids{
+    text-align: center;
+    width: 50%;
+}
+.kids h2{
+    margin-bottom: 30px;
+}
+.kids img{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////// media query pc////////////////////////*/
+@media screen and (min-width:769px){
+ 
+  
+    
+    
+    
+} /* PC */
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////// media query////////////////////////*/
+@media screen and (max-width:768px){
+      
+    .sub_bg {
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+    article .pics ul li img{
+        vertical-align: top;
+    }
+      
+   
+    
+    article .pics ul li.big,article .pics ul li.small{
+        margin: 10px 2%;
+        width: 96%;
+        text-align: center;
+    }
+    .sub_bg{
+        width: 100%;
+    }
+    
+    
+    
+    
+
+    
+    
+    
+    
+}/* mobile */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

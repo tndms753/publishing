@@ -1,0 +1,936 @@
+@charset "utt-8";
+/* content */
+.ad_wrap{
+    position: relative;
+    
+}
+.ad_wrap h2 img{
+    width: 100%;
+	/*transform: scale(1);*/
+	transition: opacity 1.5s ease-in-out, transform 2s ease 0.6s;
+	vertical-align: top;
+}
+.ad_letter{
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    color: #fff;
+}
+.ad_letter h1{
+    font-size: 38px;
+    transition-delay: 0.6s;
+    margin-bottom: 5px;
+    font-weight: 400;
+    transition: font-size 0.6s cubic-bezier(.33, .53, .94, .75);
+
+}
+.ad_letter h3{
+transition-delay: 0.75s;
+font-weight: 300;
+transition: font-size 0.7s cubic-bezier(.29, .38, .71, .95);
+}
+.more{
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    display: block;
+}
+.more span{
+    font-size: 15px;
+    border-radius: 4px;
+    background: #fff;
+    padding: .8em 2.4em;
+    color: #222;
+    transition: background 0.8s cubic-bezier(.29, .38, .71, .95);
+    display: block;
+}
+.more a {
+    color: #222;
+}
+.more:hover a{
+    color: #fff;
+}
+.more:hover span{
+    background: #6a6a6a;
+}
+.content{
+	border-bottom: 1px solid #999;
+	padding-bottom: 108px;
+	position: relative;
+}
+.content > ul{
+    display: flex;
+    margin-top: 100px;
+}
+.content > ul > li {
+     width: 24%;
+     position: relative;
+	 margin-right: 10px;
+	 
+}
+.content > ul > li > img {
+    width: 100%;
+	transition: all 0.3s ease;
+	vertical-align: top;
+}
+.content > ul > li > img:hover {
+	opacity: 0.7;
+}
+.content > ul > li > span{
+    position: absolute;
+    bottom: 14%;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.content > ul > li > span:hover a {
+	background: #000;
+}
+ 
+.content > ul > li > span:hover a{
+	color: #fff;
+}
+
+.content ul li span a{
+    color: #222;
+	display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+}
+
+.content ul li div{
+	position: absolute;
+	bottom: 51%;
+	left: 19%;
+	color: #333;
+	font-size: 25px;
+}
+.content h2{
+	font-size: 21px;
+	font-family: 'Circular',sans-serif;
+	font-weight: 400;
+	text-align: center;
+	background-color: #fff;
+	width: 19%;
+	margin: 0 auto;
+	position: absolute;
+	bottom: -14px;
+	left: 40%;
+}
+
+.content2 .clothing ul{
+	display: flex;
+	
+}
+.content2 .clothing ul li{
+	width: 23%;
+	margin-right: 30px;
+	margin-top: 4%;
+}
+.content2 .clothing ul li:nth-child(4){
+	margin-right: 0;
+}
+.content2 .clothing ul li a img{
+	width: 100%;
+	vertical-align: top;
+}
+.content2 .clothing ul li:hover a img{
+	opacity: 0.5;
+    transition: all 0.6s;
+    transform: scale(1.5 1.5);
+	
+}
+.content2 .clothing ul:nth-child(2) li{
+	margin-bottom: 3%;
+}
+.content2 .clothing  ul li div{
+	position: relative;
+	overflow: hidden;
+	
+}
+
+.content2  .clothing ul li span{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 35px;
+	line-height: 35px;
+    width: 100%;
+    font-size: 14px;
+	text-align: center;
+    text-transform: uppercase;
+    background-color: #222;
+    color: #fff;
+    z-index: 4;
+    transition: all 0.4s ease;
+    font-family: 'Circular',sans-serif;
+	bottom: -40px;
+}
+.content2  .clothing ul li:hover span{
+	bottom: 0;
+	
+}
+.content2 .clothing ul li div h3{
+	font-size: 13px;
+	font-weight: 400;
+	float: left;
+}
+.content2 .clothing ul li .letter{
+	margin-top: 10px;
+}
+.content2 .clothing ul li div h4{
+	float: right;
+}
+.content2 > .clothing > ul > li > .color1{
+	border: 1px solid #9e7b67;
+	border-radius: 50%;
+	background: #9e7b67;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+
+.content2 > .clothing > ul > li > .color2{
+	border: 1px solid #e29e68;
+	border-radius: 50%;
+	background: #e29e68;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content2 > .clothing > ul > li > .color3{
+	border: 1px solid #333432;
+	border-radius: 50%;
+	background: #333432;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content2 > .clothing > ul > li > .color4{
+	border: 1px solid #a28053;
+	border-radius: 50%;
+	background: #a28053;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content2 > .clothing > ul > li > .color5{
+	border: 1px solid #383c4a;
+	border-radius: 50%;
+	background: #383c4a;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content2 > .clothing > ul > li > .color6{
+	border: 1px solid #88302c;
+	border-radius: 50%;
+	background: #88302c;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content2 > .clothing > ul > li > .color7{
+	border: 1px solid #ece9e2;
+	border-radius: 50%;
+	background: #ece9e2;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content2 > .clothing > ul > li > .color8{
+	border: 1px solid #c59964;
+	border-radius: 50%;
+	background: #c59964;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+
+.content2 > .clothing > ul > li > .color9{
+	border: 1px solid #eceae5;
+	border-radius: 50%;
+	background: #eceae5;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content2 > .clothing > ul > li > .color10{
+	border: 1px solid #706248;
+	border-radius: 50%;
+	background: #706248;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.more_wrap h2{
+	background: #fff;
+	border: 1px solid #000;
+    border-radius: 5px;
+    width: 11%;
+    margin: 20px auto 10px;
+    display: block;
+    padding: .7em 0em;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+	font-size: 14px;
+}
+.more_wrap h2:hover{
+	background: #000;
+	border: 1px solid #000;
+    border-radius: 5px;
+    width: 11%;
+    margin: 20px auto 10px;
+    display: block;
+    padding: .7em 0em;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+	font-size: 14px;
+}
+.middle_ad_clothing{
+    background: #fff4f0;
+    height: 450px;
+	margin: 10% 0;
+	
+	
+    
+}
+.middle_ad_clothing .bg_color_wrap{
+	width: 100%;
+	position: relative;
+   /* padding-top: 10%;*/
+}
+.middle_ad_clothing .bg_color{
+    margin-top: 10%;
+	margin-right: 521px;
+    padding-top: 10%;
+	
+}
+.middle_ad_clothing .bg_color .wrap h2{
+	font-size: 48px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+.middle_ad_clothing .bg_color h5{
+	font-size: 17px;
+	font-weight: 400;
+}
+.middle_ad_clothing .bg_color h3{
+    background: #000;
+    border-radius: 10px;
+    margin: 20px auto 10px;
+    display: block;
+    padding: .8em 2.4em;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+	float: left;
+	
+   
+}
+.middle_ad_clothing .right_pic{
+    background-image: url(../img/shop09.jpg) 0 0 no-repeat fixed;
+    
+	
+}
+.middle_ad_clothing .right_pic{
+    display: flex;
+	width: 550px;
+	position: absolute;
+	right: 0;
+	top: -6px;
+}
+.middle_ad_clothing .right_pic span:first-child img{
+    vertical-align: top;
+	margin-top: 33%;
+	z-index: 20;
+    position: relative;
+    left: 30px;
+	
+	
+}
+.middle_ad_clothing .right_pic span:nth-child(2){
+    margin-top: -50px;
+	z-index: 10;
+	margin-left: -40;
+	
+}
+
+
+
+
+
+
+
+.content3{
+	border-top: 1px solid #999;
+	position: relative;
+}
+.content3 h2.trending{
+	font-size: 21px;
+	font-family: 'Circular',sans-serif;
+	font-weight: 400;
+	text-align: center;
+	background-color: #fff;
+	width: 19%;
+	margin: 0 auto;
+	position: absolute;
+	top: -14px;
+	left: 425px;
+}
+.content3 .clothing ul{
+	display: flex;
+	
+}
+.content3 .clothing ul li{
+	width: 23%;
+	margin-right: 30px;
+	margin-top: 4%;
+}
+.content3 .clothing ul li:nth-child(4){
+	margin-right: 0;
+}
+.content3 .clothing ul li a img{
+	width: 100%;
+	vertical-align: top;
+}
+.content3 .clothing ul li:hover a img{
+	opacity: 0.5;
+    transition: all 0.6s;
+    transform: scale(1.5 1.5);
+	
+}
+.content3 .clothing ul.sec2 li{
+	margin-bottom: 3%;
+	
+	
+}
+.content3 .clothing  ul li div{
+	position: relative;
+	overflow: hidden;
+}
+.content3 .clothing ul li:hover span{
+	bottom: 0;
+}
+
+.content3  .clothing ul li span{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 35px;
+	line-height: 35px;
+    width: 100%;
+    font-size: 14px;
+	text-align: center;
+    text-transform: uppercase;
+    background-color: #222;
+    color: #fff;
+    z-index: 4;
+    transition: all 0.4s ease;
+    font-family: 'Circular',sans-serif;
+	bottom: -40px;
+}
+.content3 .clothing ul li div h3{
+	font-size: 13px;
+	font-weight: 400;
+	float: left;
+}
+.content3 .clothing ul li .letter{
+	margin-top: 10px;
+}
+.content3 .clothing ul li div h4{
+	float: right;
+}
+.content3 > .clothing > ul > li > .color1{
+	border: 1px solid #9e7b67;
+	border-radius: 50%;
+	background: #9e7b67;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+
+.content3 > .clothing > ul > li > .color2{
+	border: 1px solid #e29e68;
+	border-radius: 50%;
+	background: #e29e68;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content3 > .clothing > ul > li > .color3{
+	border: 1px solid #333432;
+	border-radius: 50%;
+	background: #333432;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content3 > .clothing > ul > li > .color4{
+	border: 1px solid #a28053;
+	border-radius: 50%;
+	background: #a28053;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content3 > .clothing > ul > li > .color5{
+	border: 1px solid #383c4a;
+	border-radius: 50%;
+	background: #383c4a;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content3 > .clothing > ul > li > .color6{
+	border: 1px solid #88302c;
+	border-radius: 50%;
+	background: #88302c;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content3 > .clothing > ul > li > .color7{
+	border: 1px solid #ece9e2;
+	border-radius: 50%;
+	background: #ece9e2;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content3 > .clothing > ul > li > .color8{
+	border: 1px solid #c59964;
+	border-radius: 50%;
+	background: #c59964;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+
+.content3 > .clothing > ul > li > .color9{
+	border: 1px solid #eceae5;
+	border-radius: 50%;
+	background: #eceae5;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.content3 > .clothing > ul > li > .color10{
+	border: 1px solid #706248;
+	border-radius: 50%;
+	background: #706248;
+	display: inline-block;
+	width: 5%;
+	height: 3%;
+	margin-top: 7px;
+}
+.more_wrap2 h2{
+	background: #fff;
+	border: 1px solid #000;
+    border-radius: 5px;
+    width: 11%;
+    margin: 20px auto 10px;
+    display: block;
+    padding: .7em 0em;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+	font-size: 14px;
+}
+.more_wrap2 h2:hover{
+	background: #000;
+	border: 1px solid #000;
+    border-radius: 5px;
+    width: 11%;
+    margin: 20px auto 10px;
+    display: block;
+    padding: .7em 0em;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+	font-size: 14px;
+}
+.ad_bg2{
+	background: #fff4f0;
+	width: 100%;
+	margin: 8% 0;
+}
+.ad_bg2 .video{
+	/*width: 600px;*/
+	margin: 0 auto;
+	height: auto;
+}
+.ad_bg2 .video > ul{
+	width: 100%;
+	position: relative;
+}
+.ad_bg2 .video ul li{
+	/*width: 35%;*/
+}
+.ad_bg2 .video ul li img{
+	width: 100%;
+	cursor: pointer;
+}
+.ad_bg2 .video > ul > div{
+	position: absolute;
+	bottom: 22%;
+	right: 10%;	
+}
+.ad_bg2 .video > ul > div h1{
+	font-size: 60px;
+	color: #fff;
+	background-color: #898989;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+.ad_bg2 .video > ul > div h2{
+	color: #333;
+}
+.magagine{
+	border-top: 1px solid #999;
+	position: relative;
+	padding-top: 50px;
+}
+.magagine h2{
+	font-size: 21px;
+    font-family: 'Circular',sans-serif;
+    font-weight: 400;
+	color: #000;
+    text-align: center;
+    background-color: #fff;
+    width: 25%;
+	margin: 0 auto;
+	position: absolute;
+	top: -14px;
+    left: 425px;
+    
+}
+.magagine .magagines_wrap ul{
+	display: flex;
+}
+.magagine .magagines_wrap ul li{
+	margin-right: 16px;
+	width: 34%;
+}
+.magagine .magagines_wrap ul li:last-child{
+	margin-right: 0;
+}
+.magagine .magagines_wrap ul li img{
+	width: 100%;
+}
+footer{
+	background-color: #111111;
+	margin-top: 10%;
+	
+}
+footer .footer_top{
+	border-bottom: 1px solid #292929;
+}
+footer .footer_top ul{
+	display: flex;
+	width: 24%;
+	margin: 0 auto;
+	padding: 5% 0  3% 0;
+}
+footer .footer_top ul li{
+	margin-right: 17%;
+	
+	
+}
+footer .footer_top ul li img{
+	width: 35px;
+}
+footer > .footer_content div{
+	display: flex;
+	padding: 5% 0;
+	width: 80%;
+	margin: 0 auto;
+}
+footer > .footer_content div ul{
+	width: 30%;
+}
+footer > .footer_content div ul li{
+	line-height: 30px;
+}
+footer > .footer_content div ul li:first-child{
+	margin-bottom: 3%;
+	color: #666666;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+footer > .footer_content div ul li a{
+	color: #666666;
+	font-size: 1.1em;
+	
+}
+footer > .footer_content div ul li:hover a{
+	text-decoration: underline;
+}
+footer > .footer_content div ul li{
+	text-align: center;
+}
+footer > .footer_content div ul{
+	text-align: center;
+}
+footer .footer_last{
+	border: 1px solid #292929;
+}
+footer .footer_last span{
+	display: block;
+	text-align: center;
+	padding-top: 30px;
+}
+footer .footer_last span img{
+	width: 70px;
+	
+}
+footer .footer_last div{
+	padding: 2% 0;
+	line-height: 18px;
+}
+
+.body_wrap{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .more {
+        bottom: 34%;
+        left: 3%;
+    }
+    .middle_ad_clothing .right_pic span:nth-child(2){
+        display: none;
+    }  
+    .middle_ad_clothing .right_pic{
+        display: flex;
+        width: 550px;
+        margin: 0 auto;  
+    }
+    .middle_ad_clothing .right_pic span:first-child img{
+        left: 230px;
+    }
+    .middle_ad_clothing .bg_color{
+        margin-right: 349px;
+    }
+}/* 테블릿1 */
+@media screen and (max-width:900px) {
+    .middle_ad_clothing .bg_color .wrap h2{
+        font-size: 40px;
+    }
+    .middle_ad_clothing .bg_color h5{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1130px) {
+    .more {
+        bottom: 34%;
+        left: 3%;
+    }
+    .magagine h2{
+        left: 37%;
+        width: 27%;
+        
+    }
+    footer .footer_last div {
+    padding: 2% 15px;
+    }   
+}/* 테블릿2 */
+@media screen and (max-width:996px) {
+    .content h2, .content3 h2.trending{
+        width: 27%;
+        left: 38%;
+    }
+     .magagine h2{
+       left: 33%;
+        width: 36%;
+}
+@media screen and (max-width:935px) {
+    .middle_ad_clothing .bg_color .wrap h2{
+        font-size: 43px;
+    }
+    .middle_ad_clothing .bg_color h5{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .more{
+        bottom: 23%;
+        left: 3%;
+    }
+    .more span{
+        font-size: 12px;
+    }
+    .more_wrap2 h2, .more_wrap h2{
+        width: 146px;
+    }
+    .more_wrap2 h2:hover, .more_wrap h2:hover{
+         width: 146px;
+    }
+    .bg_color{
+        display: block;
+    }
+    .right_pic{
+        display: block;
+    }
+    .ad_letter h1{
+        font-size: 29px;
+    }
+    .ad_bg2 .video > ul > div h1{
+        font-size: 26px;
+        margin-bottom: 3px;
+    }
+    .ad_bg2 .video > ul > div h2{
+        font-size: 13px;
+    }
+    .content{
+        padding-bottom: 80px;
+    }
+    .content > ul{
+       flex-wrap: wrap;
+       margin-top: 60px;
+       margin: 35px 20px 0;
+    }
+    .content > ul > li {
+       width: 45%;
+       margin-bottom: 10px;
+        margin: 5px 2.5%;
+    }
+    .content h2, .content3 h2.trending, .magagine h2{
+        font-size: 20px;
+        width: 40%;
+        left: 30%;
+    }
+    .content2 .clothing ul li, .content3 .clothing ul li{
+        width: 24%;
+        margin-right: 10px;
+    }
+    .content2 .clothing ul, .content3 .clothing ul{
+        flex-wrap: wrap;
+    }
+    .content2 .clothing ul li, .content3 .clothing ul li, .content2 .clothing ul li, .content3 .clothing ul li{
+        width: 47%;
+        margin: 20px 1.5%;
+    }
+    .middle_ad_clothing .right_pic span:nth-child(2){
+        display: none;
+    }
+    .middle_ad_clothing .bg_color{
+        margin-top: 0;
+        margin-right: 0;
+        padding-bottom: 0;
+        padding-top: 3%;
+        text-align: center;
+    }
+    .middle_ad_clothing{
+        height: auto;
+    }
+    .middle_ad_clothing .right_pic{
+        position: static;
+        width: 40%;
+        margin: 0 auto;
+    }
+    .middle_ad_clothing .bg_color .wrap h2{
+        text-align: center;
+    }
+    .middle_ad_clothing .bg_color h5{
+        text-align: center;
+    }
+    .middle_ad_clothing .right_pic span:first-child img{
+        left: 0;
+        margin-top: 20%;
+        width: 100%;
+    }
+    .middle_ad_clothing .bg_color h3{
+        margin: 20px 0 10px;
+        display: inline-block;
+        float: none;
+        margin-bottom: 10%;
+    }
+    .magagine .magagines_wrap ul{
+        flex: none;
+    }
+    .magagine .magagines_wrap ul li {
+    margin-right: 4px;
+    }
+    footer .footer_last div{
+        display: none;
+    }
+    
+    footer .footer_top ul{
+        width: 32%;
+    }
+    footer .footer_top ul li{
+        margin-right: 6%;
+    }
+    footer .footer_top ul li img{
+        width: 28px;
+    }
+    footer > .footer_content div{
+        display: flex;
+        flex-wrap: wrap;
+        display: block;
+    }
+    footer > .footer_content div ul{
+        width: 30%;
+        margin: 10px auto;
+    }
+   /* footer > .footer_content div ul li {
+        display: none;
+    }
+    footer > .footer_content div ul li:first-child {
+        display: block;
+        
+        }*/
+    footer .footer_last span{
+        padding: 15px 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+}/* mobile */

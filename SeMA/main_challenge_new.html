@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+   
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/SeMA_main.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sema.js"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--favicon 넣기-->
+    <!--아이폰 홈화면 아이콘-->
+    <link rel="apple-touch-icon-precomposed" href="img/sema_favicon.png">
+    
+    <!--브라우저 창 제목 표시줄에 보여주기-->
+    <link rel="shortercut icon" href="img/sema_favicon.png">
+    <script>
+    $(function(){
+          
+    /* 이미지 오버시 이미지 크게 보이기1*/
+     $('.wrap_2 ul li').mouseover(function(){
+             $('.wrap_1 > a > img').attr({
+                src:$(this).find('a').attr('href'),
+                alt:$(this).find('a img').attr('alt')
+                
+            });
+            
+            return false;
+            
+        });
+        
+    /* 이미지 오버시 이미지 크게 보이기1*/
+        $('.wrap2 ul li').mouseover(function(){
+             $('.wrap3 > a > img').attr({
+                src:$(this).find('a').attr('href'),
+                alt:$(this).find('a img').attr('alt')
+                
+            });
+            
+            return false;
+            
+        });
+       
+    });
+    
+    
+    </script>
+    
+    
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script> <!-- 스크롤 바 변형 start -->
+	<!-- custom scrollbar stylesheet -->
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	
+	<script>
+		$(function(){
+			
+				
+				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+				
+				
+				
+				$("body").mCustomScrollbar({theme:"inset-dark"});
+				
+				
+		
+		});
+	</script> <!-- 스크롤 바 변형 finish -->
+<style>
+    html, body{
+        height: 100%;
+    } /* 스크롤바 할 때 세로갚을 무조건 줘야 먹는다!*/
+    </style>
+</head>
+
+
+<body>
+    <!--header>(.logo>h2>a)+(.head>ul>li*4>a)+.menu>ul>li*5>a-->
+    <header class="center clearfix">
+        <div class="gnb_wrap">
+            <div class="gnb">
+                <div class="logo">
+                    <h2>
+                        <a href="#"><img src="img/main_img/logo.png" alt="SeMA" class="pc"></a>
+                        <!--pc용 로고-->
+                        <a href="#"><img src="img/mobile_img/logo.png" alt="SeMA" class="mobile"></a>
+                        <!--모바일용 로고-->
+                    </h2>
+                </div>
+                <div class="head_wrap">
+                    <div class="head clearfix">
+                        <ul>
+                            <li><a href="#"><img src="img/main_img/main_03.png" alt="search"></a></li>
+                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="#">JOIN</a></li>
+                            <li><a href="#">ENG</a></li>
+                        </ul>
+                    </div> <!-- head -->
+
+                    <!-- 모바일 메뉴 아이콘 -->
+                    <div class="mb_menu">
+                        <a href="#">
+                            <img src="img/mobile_img/menu.png" alt="메뉴">
+                        </a>
+                    </div>
+
+                    <!-- 모바일 네비게이션 복사 영역-->
+                    <div id="mb_navi">
+                        <div class="empty">
+                              <span><a href="#">로그인</a></span>
+                              <span><a href="#">회원가입</a></span>
+                              <span><a href="#">Eng</a></span>
+                               
+                           </div>
+                        <!--모바일 네비게이션 바-->
+
+                    </div>
+                    <!--mb_navi-->
+                    
+                    <div class="mobile_bg">
+                        
+                    </div>
+        
+
+                    <div class="menu clearfix">
+                        <ul>
+                           
+                            <li>
+                                <a href="#">SeMA 소개 <img src="img/mobile_img/down.png" alt="down_botton"></a>
+                                <div class="menu_sec">
+                                    <ul>
+                                        <li><a href="sub1.html">비전 / 전략</a></li>
+                                        <li><a href="sub1_2.html">미술관 안내</a></li>
+                                        <li><a href="sub1_3.html">오시는길</a></li>
+                                    </ul>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">EXHIBITION <img src="img/mobile_img/down.png" alt="down_botton"></a>
+                                <div class="menu_sec">
+                                    <ul>
+                                        <li><a href="sub2.html">현재 전시</a></li>
+                                        <li><a href="#">예정 전시</a></li>
+                                        <li><a href="#">지난 전시</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">PROGRAM <img src="img/mobile_img/down.png" alt="down_botton"></a>
+                                <div class="menu_sec">
+                                    <ul>
+                                        <li><a href="sub3.html">어린이 프로그램</a></li>
+                                        <li><a href="sub3_1.html">청소년 프로그램</a></li>
+                                        <li><a href="sub3_2.html">대학생·성인 프로그램</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">소장품 <img src="img/mobile_img/down.png" alt="down_botton"></a>
+                                <div class="menu_sec">
+                                    <ul>
+                                        <li><a href="sub4.html">신소장품</a></li>
+                                        <li><a href="#">소장품 상세 검색</a></li>
+                                        <li><a href="#">소장작품</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">NEWS <img src="img/mobile_img/down.png" alt="down_botton"></a>
+                                <div class="menu_sec">
+                                    <ul>
+                                        <li><a href="http://goodpage.dothome.co.kr/xe/notice_review">공지사항</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                        <li><a href="#">Q&amp;A</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- menu -->
+                </div> <!-- head_wrap -->
+            </div><!--gnb-->
+            
+            <div class="navi_bg">
+                
+            </div>
+            
+            
+        </div> <!--gnb_wrap-->
+    </header> <!-- header////////////////////////////////////////////////////////////////////-->
+    <div class="main_side pics swiper-container swiper1">
+        <!--<img src="img/main_img/m_slide02.png" alt="slide_img01">-->
+        <div class="main_pic swiper-wrapper">
+            <a href="#" class="swiper-slide"><img src="img/main_img/Untitled-2.jpg" alt="main01_img"></a>
+            <a href="#" class="swiper-slide"><img src="img/main_img/Untitled-4.jpg" alt="main02_img"></a>
+        </div>
+        <!-- Add Pagination --> <!--이게 블릿 버튼!! -->
+    <div class="swiper-pagination"></div>
+    </div><!-- main_side ////////////////////////////////////////////////////////////////////-->
+
+
+    <!-- article>(.sec1>.letter_wrap>h2>span)+(figure>h3>span)+figure>ul>li*3>a>img-->
+    <div class="article_wrap">
+    <article class="center">
+        <div class="sec1 clearfix">
+            <div class="sec1_wrap1">
+                <div class="wrap_letter">
+                    <h2 class="letter1">Current</h2>
+                    <h2 class="letter2">Exhibition</h2>
+                </div>
+                <h4>색다른 현재 전시</h4>
+            </div>
+            <div class="sec1_wrap2">
+                <figure class="wrap_1">
+                    <a href="#">
+                    <img src="img/main_img/current01.png" alt="current_exhibition_img01">
+                 <!--   <span>
+                    <img src="img/main_img/search.png" alt="자세히보기"></span>--></a>
+                    
+                    <div class="letter_wrap clearfix">
+                        <h3 class="center"><strong>유휴공간 프로젝트</strong></h3>
+                        <time datetime="2019-01-01" class="center">2019.01.01 - 2019.12.31</time>
+                    </div>
+                </figure>
+                <figure class="wrap_2">
+                    <ul>
+                        <li>
+                            <a href="img/main_img/current02_big.jpg" ><div class="box"></div>
+                                <img src="img/main_img/current02.png" alt="current_exhibition_img02"></a>
+                        </li>
+                        <li>
+                            <a href="img/main_img/current03_big.jpg"><div class="box"></div>
+                                <img src="img/main_img/current03.png" alt="current_exhibition_img03"></a>
+                        </li>
+                        <li>
+                            <a href="img/main_img/current04_big.jpg"><div class="box"></div>
+                                <img src="img/main_img/current04.png" alt="current_exhibition_img04"></a>
+                        </li>
+                        </ul>
+                        <ul>
+                        <li>
+                            <a href="img/main_img/current02_big.jpg" ><div class="box"></div>
+                                <img src="img/main_img/current02.png" alt="current_exhibition_img02"></a>
+                        </li>
+                        <li>
+                            <a href="img/main_img/current03_big.jpg"><div class="box"></div>
+                                <img src="img/main_img/current03.png" alt="current_exhibition_img03"></a>
+                        </li>
+                        <li>
+                            <a href="img/main_img/current04_big.jpg"><div class="box"></div>
+                                <img src="img/main_img/current04.png" alt="current_exhibition_img04"></a>
+                        </li>
+                        </ul>
+                    
+                </figure>
+            </div>
+        </div>
+
+        <div class="sec2 clearfix">
+            <!--(.sec2_wrap1>h2>span)+.sec2_wrap2>(.wrap1>(.letter_wrap>h4>span>h5)+time)+(.wrap2>ul>li*3>a>img)+.wrap3>img>img-->
+            <div class="sec2_wrap1 clearfix">
+                <h2 class="sema">SeMa</h2>
+                <h2 class="program">Program</h2>
+                <h4>서울미술관의 특별한</h4>
+                <h4 class="ed">교육 프로그램</h4>
+            </div>
+            <div class="sec2_wrap2 clearfix">
+             
+                <div class="wrap3">
+                    <a href="#">
+                    <img src="img/main_img/program01_big.jpg" alt="program01">
+                    <!--<span><img src="img/main_img/search.png" alt="자세히보기"></span>--></a>
+                      
+                       <div class="wrap1">
+                    <div class="letter_wrap">
+                        <h4>사각형 안에 무엇이 있을까요?</h4>
+                        <p>작품 안에 느껴지는 풍경과 자신이 상상하는 공간을 연결 하며 전시</p>
+                    </div>
+                    <p>
+                        <span><time datetime="2019-11-05">2019.11.05, 12, 19, 26 화요일</time></span>
+                        <span>7:00-10:00 - 11:00AM</span>
+                    </p>
+                </div>
+                </div>
+                <div class="wrap2">
+                    <ul>
+                        <li><a href="img/main_img/program02_big.jpg"><div class="box"></div>
+                        <img src="img/main_img/program02.png" alt="program2"></a></li>
+                        <li><a href="img/main_img/program03_big.jpg"><div class="box"></div>
+                        <img src="img/main_img/program03.png" alt="program3"></a></li>
+                        <li><a href="img/main_img/program04_big.jpg"><div class="box"></div>
+                        <img src="img/main_img/program04.png" alt="program4"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="img/main_img/program02_big.jpg"><div class="box"></div>
+                        <img src="img/main_img/program02.png" alt="program2"></a></li>
+                        <li><a href="img/main_img/program03_big.jpg"><div class="box"></div>
+                        <img src="img/main_img/program03.png" alt="program3"></a></li>
+                        <li><a href="img/main_img/program04_big.jpg"><div class="box"></div>
+                        <img src="img/main_img/program04.png" alt="program4"></a></li>
+                    </ul>
+                </div>
+                
+            </div><!-- sec2_wrap 2-->
+        </div>
+    </article>
+    </div> <!-- article_wrap //////////////////////////////////////////////////////////////////-->
+
+    <div class="ad">
+        <figure class="center">
+            <a href="#"><img src="img/main_img/paperpresent_simple.jpg" alt="배너사진"></a>
+        </figure>
+    </div>
+    
+    
+    <div class="article2">
+       <div class="sec3_wrap">
+        <div class="sec3 center">
+            <div class="letter_wrap">
+                <h2 class="letter">NEW</h2>
+                <h2>Collection</h2>
+                <h4>신소장품</h4>
+            </div>
+            <div class="sec3_wrap">
+                
+                   
+                    <div class="pics swiper-container swiper2">
+                    <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="img/main_img/new02.png" alt="New_collection1">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="img/main_img/new01.png" alt="New_collection2">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="img/main_img/new03.png" alt="New_collection3">
+                        </a>
+                    </li>
+                    </ul>
+                    
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    </div>
+                    
+                  
+                
+            </div>
+        </div>
+        </div><!--sec3_wrap-->
+        <div class="sec4_wrap">
+        <div class="sec4">
+        <div class="sec4_wrap">
+         <div class="letter_wrap center clearfix">
+                <h2 class="letter">SNS</h2>
+                <h2>review</h2>
+                <h4>SNS 리뷰</h4>
+            </div>
+            <div class="swiper-container swiper3"><!-- 슬라이드 넘김 세번째 -->
+          <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                  <a href="#"><img src="img/main_img/review01.png" alt="SNS_review01"></a>
+              </li>
+              <li class="swiper-slide">
+                  <a href="#"><img src="img/main_img/review02.png" alt="SNS_review02"></a>
+              </li>
+              <li class="swiper-slide">
+                  <a href="#"><img src="img/main_img/review03.png" alt="SNS_review03"></a>
+              </li>
+              <li class="swiper-slide">
+                  <a href="#"><img src="img/main_img/review04.png" alt="SNS_review04"></a>
+              </li>
+              <li class="swiper-slide">
+                  <a href="#"><img src="img/main_img/review05.png" alt="SNS_review05"></a>
+              </li>
+              <li class="swiper-slide">
+                  <a href="#"><img src="img/main_img/review06.png" alt="SNS_review06"></a>
+              </li>
+              <li class="swiper-slide">
+                  <a href="#"><img src="img/main_img/review07.png" alt="SNS_review07"></a>
+              </li>
+              <li class="swiper-slide">
+                  <a href="#"><img src="img/main_img/review08.png" alt="SNS_review08"></a>
+              </li>
+              <li class="swiper-slide">
+                  <a href="#"><img src="img/main_img/review09.png" alt="SNS_review09"></a>
+              </li>
+              
+          </ul>
+            </div>
+            </div>
+        </div>
+        </div> <!-- sec4_ wrap -->
+
+    
+    
+    <footer>
+       <div class="footer_wrap center">
+        <div class="box1">
+          <h3>서울시립미술관</h3>
+          <span>
+              서울 중구 덕수궁길 61<br>
+              지번: 서소문동 37 서울시립미술관<br>
+              T. 02-2124-8800 E. sema@seoul.go.kr
+          </span>
+        </div>
+        <div class="box2">
+            <h3><a href="#">SEOUL MUSEUM OF ART</a></h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/main_img/sns_01.png" alt="youtube_logo">
+                    </a>
+                
+                    <a href="#">
+                        <img src="img/main_img/sns_02.png"  alt="instagram_logo">
+                    </a>
+                
+                    <a href="#">
+                        <img src="img/main_img/sns_03.png"  alt="facebook_logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="box3">
+            <h3>이용시간</h3>
+            <span>
+                평일 10:00 - 20:00<br>
+                주말 10:00 - 19:00<br>
+                월요일 휴무
+            </span>
+        </div>
+        </div>
+           <div class="box4 center">
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">영상정보처리기기 운영 관리방침</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+        </div>
+    </footer><!-- footer -->
+    
+    <!-- Swiper JS -->
+  <script src="dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+       var swiper1 = new Swiper('.swiper1', {
+      slidesPerView: 1, //한번에 보여지는 슬라이드 개수
+      spaceBetween: 0, //슬라이드 사이 공간
+      loop: true,  // 반복 슬라이드
+      keyboard: {
+        enabled: true,  //키보드 제어
+      },
+        autoplay: { //자동으로 슬라이딩 되는것 빼고싶으면 이거 빼면됨
+      delay: 5000, // 4초마다 슬라이드
+      disableOnInteraction: true, //버튼 제어시 멈춤
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, //블릿버튼을 클릭으로 제어
+      },
+       
+    });
+      
+    var swiper2 = new Swiper('.swiper2', {
+      slidesPerView: 3, //한번에 보여지는 슬라이드 개수
+      spaceBetween: 40, //슬라이드 사이 공간
+      loop: true,  // 반복 슬라이드
+      keyboard: {
+        enabled: true,  //키보드 제어
+      },
+        autoplay: { //자동으로 슬라이딩 되는것 빼고싶으면 이거 빼면됨
+      delay: 3000, // 4초마다 슬라이드
+      disableOnInteraction: true, //버튼 제어시 멈춤
+      },
+        navigation: { //이전다음버튼 제어
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+            
+      },
+         breakpoints:{
+            768:{
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+         }
+    
+      
+    });
+      
+    var swiper3 = new Swiper('.swiper3', {
+      slidesPerView: 8, //한번에 보여지는 슬라이드 개수
+      spaceBetween: 10, //슬라이드 사이 공간
+      loop: true,  // 반복 슬라이드
+      breakpoints:{
+            768:{
+                slidesPerView: 4,
+                spaceBetween: 10
+            },
+         }
+    
+     
+      
+      
+    });
+  </script>
+
+    
+</body>
+
+</html>

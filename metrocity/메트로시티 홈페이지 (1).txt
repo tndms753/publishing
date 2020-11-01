@@ -1,0 +1,16 @@
+메트로시티 참고할 홈페이지 사이트
+https://markup.themewagon.com/tryfreya/
+
+http://designnas.com/portfolio/2019_ui/jestina/
+메트로시티 참고!! 포토폴리오
+font-family: "Dotum", "Arial", sans-serif;
+font-size: 12px;
+color: #333;
+
+메트로시티 사이트 폰트
+font-family: 'Calibri','Nanum Gothic', sans-serif;
+font-size: 15px;
+
+
+https://colorlib.com/wp/templates/
+총 부트스트랩 있는 사이트

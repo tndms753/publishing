@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500,700&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+   
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/SeMA_sub4.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+    <script src="js/sema.js"></script>
+    
+     <script src="masonry/js/imagesloaded.pkgd.js"></script><!-- 마손니 쓸때 써야함!!!!! -->
+     <script src="masonry/js/masonry.pkgd.min.js"></script><!-- 마손니 쓸때 써야함!!!!! -->
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--favicon 넣기-->
+    <!--아이폰 홈화면 아이콘-->
+    <link rel="apple-touch-icon-precomposed" href="img/sema_favicon.png">
+    
+    <!--브라우저 창 제목 표시줄에 보여주기-->
+    <link rel="shortcut icon" href="img/sema_favicon.png">
+    <script>
+      $(function(){ //JQuery 준비
+         
+          var $grid = $('.grid').imagesLoaded(function() {
+                // init Masonry after all images have loaded
+                $grid.masonry({
+                    itemSelector: '.grid-item',
+                    columnWidth: '.grid-sizer',
+                    percentPosition: true
+                });
+            });
+
+          }); // JQuery 종료
+        
+        
+        
+        
+        
+    </script>
+</head>
+
+
+<body>
+    <? include "header.html" ?>
+    
+    <div class="content">
+      <div class="sub_bg">
+          
+      </div>
+      <div class="letter_wrap">
+      <span class="letter">
+          <a href="sub1.html">신소장품</a>
+          <a href="sub1_2.html">소장품 상세 검색</a>
+          <a href="sub1_3.html">소장작품</a>
+      </span>
+      </div>
+  </div>
+  <div id="all_wrap" class="center">
+<div class="top clearfix">
+    <h3>NEW COLLECTION</h3>
+    <form class="clearfix">
+        <input type="text" id="prod">
+        <input type="submit" value="검색">
+    </form>
+</div> <!-- top -->
+
+<div class="content_wrap">
+    <ul class="grid">
+       <li class="grid-sizer"></li><!-- grid-sizer -->
+        <li class="grid-item">
+           <div>
+            <img src="img/sub/sub4_img/pic01.jpeg" alt="사진1">
+            
+            <h4>이수경(1985) - 쓰레기 조개(블루)</h4>
+            <span>제작연도<br>2016</span>
+            <span>재료/기법<br>손바느질, 코르덴 자켓, 인조 모피, 모조 진주, 담수 진주</span>
+            <span>작품규격<br>48×34×20cm</span>
+           </div>
+        </li><!-- grid-item -->
+        <li class="grid-item">
+           <div>
+            <img src="img/sub/sub4_img/pic02.jpeg" alt="사진2">
+            <h4>이수경(1985) - 쓰레기 조개(블루)</h4>
+            <span>제작연도<br>2016</span>
+            <span>재료/기법<br>손바느질, 코르덴 자켓, 인조 모피, 모조 진주, 담수 진주</span>
+            <span>작품규격<br>48×34×20cm</span>
+            </div>
+        </li>
+        <li class="grid-item">
+           <div>
+            <img src="img/sub/sub4_img/pic03.jpeg" alt="사진3">
+            <h4>이수경(1985) - 쓰레기 조개(블루)</h4>
+            <span>제작연도<br>2016</span>
+            <span>재료/기법<br>손바느질, 코르덴 자켓, 인조 모피, 모조 진주, 담수 진주</span>
+            <span>작품규격<br>48×34×20cm</span>
+            </div>
+        </li>
+        <li class="grid-item">
+           <div>
+            <img src="img/sub/sub4_img/pic04.jpeg" alt="사진4">
+            <h4>이수경(1985) - 쓰레기 조개(블루)</h4>
+            <span>제작연도<br>2016</span>
+            <span>재료/기법<br>손바느질, 코르덴 자켓, 인조 모피, 모조 진주, 담수 진주</span>
+            <span>작품규격<br>48×34×20cm</span>
+            </div>
+        </li>
+        <li class="grid-item">
+           <div>
+            <img src="img/sub/sub4_img/pic05.jpeg" alt="사진5">
+            <h4>이수경(1985) - 쓰레기 조개(블루)</h4>
+            <span>제작연도<br>2016</span>
+            <span>재료/기법<br>손바느질, 코르덴 자켓, 인조 모피, 모조 진주, 담수 진주</span>
+            <span>작품규격<br>48×34×20cm</span>
+            </div>
+        </li>
+        <li class="grid-item">
+           <div>
+            <img src="img/sub/sub4_img/pic06.jpeg" alt="사진6">
+            <h4>이수경(1985) - 쓰레기 조개(블루)</h4>
+            <span>제작연도<br>2016</span>
+            <span>재료/기법<br>손바느질, 코르덴 자켓, 인조 모피, 모조 진주, 담수 진주</span>
+            <span>작품규격<br>48×34×20cm</span>
+            </div>
+        </li>
+        <li class="grid-item">
+           <div>
+            <img src="img/sub/sub4_img/pic07.jpg" alt="사진7">
+            <h4>이수경(1985) - 쓰레기 조개(블루)</h4>
+            <span>제작연도<br>2016</span>
+            <span>재료/기법<br>손바느질, 코르덴 자켓, 인조 모피, 모조 진주, 담수 진주</span>
+            <span>작품규격<br>48×34×20cm</span>
+            </div>
+        </li>
+        <li class="grid-item">
+           <div>
+            <img src="img/sub/sub4_img/pic08.jpg" alt="사진8">
+            <h4>이수경(1985) - 쓰레기 조개(블루)</h4>
+            <span>제작연도<br>2016</span>
+            <span>재료/기법<br>손바느질, 코르덴 자켓, 인조 모피, 모조 진주, 담수 진주</span>
+            <span>작품규격<br>48×34×20cm</span>
+            </div>
+        </li>
+        <li class="grid-item">
+           <div>
+            <img src="img/sub/sub4_img/pic09.jpg" alt="사진9">
+            <h4>이수경(1985) - 쓰레기 조개(블루)</h4>
+            <span>제작연도<br>2016</span>
+            <span>재료/기법<br>손바느질, 코르덴 자켓, 인조 모피, 모조 진주, 담수 진주</span>
+            <span>작품규격<br>48×34×20cm</span>
+        </div>
+        </li>
+    </ul><!--grid-->
+</div> <!-- content_wrap -->
+</div> <!-- all_wrap -->
+
+<div class="pages_wrap center">
+    <span>
+        <h2>1</h2>
+    </span>
+    <span>
+        <h2>2</h2>
+    </span>
+</div>
+
+     <? include "footer.html" ?>
+
+    
+</body>
+
+</html>
